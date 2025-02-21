@@ -5,7 +5,7 @@ class Service():
         pass
 
 
-    def call_model(items: float, items2: float,  items3: float):
+    def call_model(self, items: float, items2: float):
         #model = joblib.load('model.pkl')
         #return model.predict(X_test)
-        return "Hola mundo"
+        return "Hola mundo {} {} ".format(items, items2)

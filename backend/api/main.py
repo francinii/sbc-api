@@ -6,4 +6,4 @@ app = FastAPI()
 
 @app.get("/get-model")
 async def get_model_result(item: float, item2: float):
-    return Service.call_model(item, item2)
+    return Service().call_model(item, item2)
