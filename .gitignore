@@ -1,0 +1,27 @@
+# Ignorar el entorno virtual .venv
+.venv/
+
+# Archivos de compilación y distribuciones
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Archivos de configuración de editor (por ejemplo, Visual Studio Code)
+.vscode/
+
+# Archivos de entorno de Jupyter
+.ipynb_checkpoints/
+
+# Entorno de pruebas
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Archivos de distribución
+*.egg
+*.egg-info/
+dist/
+build/
