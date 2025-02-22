@@ -23,8 +23,10 @@ services:
       - "8000:8000"
     depends_on:
       - sbc_postgres
+    #- mongo
     environment:
       - DATABASE_URL=postgresql://user:password@postgres:5432/creditScoreDB
+      # - MONGO_URL=mongodb://mongo:27017/mydatabase
     volumes:
       - ./backend:/app
 
@@ -39,6 +41,13 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+#  mongo:
+#    image: mongo:6
+#    ports:
+#      - "27017:27017"
+#    volumes:
+#      - mongo_data:/data/db
+
 volumes:
   postgres_data:
-  mongo_data:
+  #mongo_data:
