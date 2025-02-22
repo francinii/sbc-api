@@ -1,19 +1,44 @@
+# version: '0.5'
+
 services:
-  backend:
+  sbc_frontend:
     build:
-      context: .
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - sbc_backend
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+  sbc_backend:
+    build:
+      context: ./backend
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+    depends_on:
+      - sbc_postgres
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres:5432/creditScoreDB
     volumes:
       - ./backend:/app
+
+  sbc_postgres:
+    image: postgres:15
+    ports:
+      - "5432:5432"
     environment:
-      - PYTHONUNBUFFERED=1
-    depends_on: []
-  
-  #frontend:
-  #  build:
-  #    context: .
-  #    dockerfile: Dockerfile.frontend
-  #  ports:
-  #    - "3000:3000"
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: creditScoreDB
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  mongo_data:
