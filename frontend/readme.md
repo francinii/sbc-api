@@ -5,8 +5,8 @@ Note: es requerido tener node instalado. Para descargarlo: https://nodejs.org/en
 npm 10.9.2
 node v22.14.0
 
-## framework (npm create vite@latest)
-vite ^6.1.0
+## framework (npx shadcn@latest init)
+Next.js 
 
 ## correr el proyecto individualmente
 npm install
