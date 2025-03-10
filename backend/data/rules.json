@@ -1,32 +1,32 @@
 [
     {
-        "condition": {"income": {"$lt": 1000}},
-        "score_change": -50,
-        "message": "Solicitud rechazada: Ingreso menor a 1000 dólares."
+        "condition": {"salario_mensual": {"$lt": 1000}},
+        "score_change": -1,
+        "message": "El salario mensual no cumple con las normas establecidas por el banco.",
+        "effect": "bad"
+    },    
+    {
+        "condition": {"deuda_total": {"$gt": 0.5}},
+        "score_change": -1,
+        "message": "Existe una alta relacion deuda ingreso lo que reduce la probabilida de  aprobación.",
+        "effect": "bad"
     },
     {
-        "condition": {"credit_history": {"$lt": 500}},
-        "score_change": -30,
-        "message": "Historial crediticio muy bajo. Baja probabilidad de aprobación."
+        "condition": {"meses_trabajando": {"$lt": 1}},
+        "score_change": -2,
+        "message": "Poca estabilidad laboral. Baja probabilidad de aprobación.",
+        "effect": "bad"
     },
     {
-        "condition": {"debt_to_income": {"$gt": 0.5}},
-        "score_change": -20,
-        "message": "Alta relación deuda/ingreso. Reducción de probabilidad de aprobación."
-    },
-    {
-        "condition": {"job_stability": {"$lt": 1}},
-        "score_change": -20,
-        "message": "Poca estabilidad laboral. Baja probabilidad de aprobación."
-    },
-    {
-        "condition": {"income": {"$gte": 3000}, "credit_history": {"$gte": 700}, "debt_to_income": {"$lt": 0.3}, "job_stability": {"$gte": 3}},
+        "condition": {"salario_mensual": {"$gte": 3000}, "deuda_total": {"$lt": 0.3}, "meses_trabajando": {"$gte": 3}},
         "score_change": 50,
-        "message": "Alta probabilidad de aprobación."
+        "message": "Alta probabilidad de aprobación.",
+        "effect": "good"
     },
     {
-        "condition": {"income": {"$gte": 2000}, "credit_history": {"$gte": 600}, "debt_to_income": {"$lt": 0.4}, "job_stability": {"$gte": 2}},
+        "condition": {"salario_mensual": {"$gte": 2000}, "deuda_total": {"$lt": 0.4}, "meses_trabajando": {"$gte": 2}},
         "score_change": 30,
-        "message": "Probabilidad moderada de aprobación."
+        "message": "Probabilidad moderada de aprobación.",
+        "effect": "good"
     }
 ]
