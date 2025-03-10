@@ -1,5 +1,8 @@
+from datetime import datetime
+from pydantic import Field
 from sqlalchemy import Column, Integer, String, Float, Date, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
+from experta import *
 
 Base = declarative_base()
 
@@ -29,3 +32,16 @@ class Credito(Base):
 
     # Relación inversa con Cliente
     cliente = relationship("Cliente", back_populates="creditos")
+
+
+class Applicant_Fact(Fact):
+    """Datos del solicitante"""
+    cedula = Field(str, mandatory=True)
+    nombre = Field(str, mandatory=True)
+    apellido = Field(str, mandatory=True)
+    ocupacion = Field(str, mandatory=True)
+    meses_trabajando = Field(int, default=0.0)
+    salario_mensual = Field(float, default=0)
+    fecha_nacimiento = Field(str, default="12/12/2020")
+    deuda_total = Field(float, default=0.0)
+    cuota_mensual_total = Field(float, default=0.0)
