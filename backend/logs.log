@@ -1,0 +1,883 @@
+2025-03-11 00:36:57,430:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:36:57,431:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:36:57,432:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:36:57,433:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:37:01,058:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:37:01,061:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:37:01,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:37:01,063:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:38:10,622:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:38:10,623:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:38:10,624:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:38:10,624:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:38:45,951:INFO:Initializing load_model()
+2025-03-11 00:38:45,951:INFO:load_model(model_name=<_io.BufferedReader name='/app/data/modelo_rf_v4.pkl'>, platform=None, authentication=None, verbose=True)
+2025-03-11 00:39:49,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:39:49,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:39:49,359:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:39:49,359:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:04,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:04,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:04,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:04,211:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:06,663:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:06,663:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:06,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:06,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:17,801:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:17,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:17,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:17,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:22,143:INFO:Initializing load_model()
+2025-03-11 00:40:22,144:INFO:load_model(model_name=/app/data/modelo_rf_v4.pkl, platform=None, authentication=None, verbose=True)
+2025-03-11 00:40:48,021:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:48,022:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:48,022:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:48,023:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:40:52,535:INFO:Initializing load_model()
+2025-03-11 00:40:52,536:INFO:load_model(model_name=/app/data/modelo_rf_v4, platform=None, authentication=None, verbose=True)
+2025-03-11 00:40:54,853:INFO:Initializing predict_model()
+2025-03-11 00:40:54,854:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa1669f9df0>, estimator=RandomForestClassifier(n_jobs=-1, random_state=2170), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa166cc2820>)
+2025-03-11 00:40:54,855:INFO:Checking exceptions
+2025-03-11 00:40:54,856:INFO:Preloading libraries
+2025-03-11 00:43:18,977:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:43:18,978:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:43:18,978:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:43:18,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 00:43:22,453:INFO:Initializing load_model()
+2025-03-11 00:43:22,454:INFO:load_model(model_name=/app/data/modelo_rf_v4, platform=None, authentication=None, verbose=True)
+2025-03-11 00:43:24,707:INFO:Initializing predict_model()
+2025-03-11 00:43:24,708:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f6c4b5baaf0>, estimator=RandomForestClassifier(n_jobs=-1, random_state=2170), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f6c4b8ba820>)
+2025-03-11 00:43:24,708:INFO:Checking exceptions
+2025-03-11 00:43:24,709:INFO:Preloading libraries
+2025-03-11 01:16:41,969:INFO:Initializing load_model()
+2025-03-11 01:16:41,970:INFO:load_model(model_name=/app/data/modelo_rf_v4, platform=None, authentication=None, verbose=True)
+2025-03-11 01:16:43,447:INFO:Initializing predict_model()
+2025-03-11 01:16:43,447:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f6c4b5e8b50>, estimator=RandomForestClassifier(n_jobs=-1, random_state=2170), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f6c4b0a9700>)
+2025-03-11 01:16:43,447:INFO:Checking exceptions
+2025-03-11 01:16:43,447:INFO:Preloading libraries
+2025-03-11 01:45:13,011:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:45:13,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:45:13,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:45:13,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:45:16,760:INFO:Initializing load_model()
+2025-03-11 01:45:16,762:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 01:45:29,217:INFO:Initializing load_model()
+2025-03-11 01:45:29,217:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 01:46:16,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:46:16,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:46:16,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:46:16,846:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 01:48:12,106:INFO:Initializing load_model()
+2025-03-11 01:48:12,106:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 01:48:32,054:INFO:Initializing load_model()
+2025-03-11 01:48:32,054:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:07:00,095:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:07:00,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:07:00,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:07:00,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:07:12,286:INFO:Initializing load_model()
+2025-03-11 02:07:12,287:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:07:15,269:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:07:15,295:INFO:Initializing predict_model()
+2025-03-11 02:07:15,298:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa525175d60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa5276ac940>)
+2025-03-11 02:07:15,299:INFO:Checking exceptions
+2025-03-11 02:07:15,299:INFO:Preloading libraries
+2025-03-11 02:07:15,299:INFO:Set up data.
+2025-03-11 02:08:38,463:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:38,464:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:38,464:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:38,465:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:40,508:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:40,509:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:40,509:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:08:40,510:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:02,044:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:02,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:02,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:02,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:36,539:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:36,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:36,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:36,542:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:09:53,528:INFO:Initializing load_model()
+2025-03-11 02:09:53,528:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:09:54,978:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:10:22,947:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:10:22,950:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:10:22,950:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:10:22,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:10:46,070:INFO:Initializing load_model()
+2025-03-11 02:10:46,070:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:10:47,235:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:12:55,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:12:55,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:12:55,120:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:12:55,120:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:13:21,709:INFO:Initializing load_model()
+2025-03-11 02:13:21,714:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:13:23,170:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:16:20,923:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:16:20,923:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:16:20,924:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:16:20,925:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:16:25,820:INFO:Initializing load_model()
+2025-03-11 02:16:25,820:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:16:28,186:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:18:51,331:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:51,334:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:51,336:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:51,337:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:59,535:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:59,535:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:59,536:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:18:59,536:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:19:21,923:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:19:21,923:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:19:21,925:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:19:21,925:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:20:51,954:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:20:51,954:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:20:51,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:20:51,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:21:36,624:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:21:36,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:21:36,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:21:36,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:21:43,796:INFO:Initializing load_model()
+2025-03-11 02:21:43,797:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:21:46,571:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:22:35,469:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:22:35,469:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:22:35,470:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:22:35,470:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:23:05,663:INFO:Initializing load_model()
+2025-03-11 02:23:05,664:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:23:08,800:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:23:08,843:INFO:Initializing predict_model()
+2025-03-11 02:23:08,844:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f7c91147640>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f7c9364f670>)
+2025-03-11 02:23:08,845:INFO:Checking exceptions
+2025-03-11 02:23:08,846:INFO:Preloading libraries
+2025-03-11 02:23:08,847:INFO:Set up data.
+2025-03-11 02:23:08,854:INFO:Set up index.
+2025-03-11 02:24:58,030:INFO:Initializing load_model()
+2025-03-11 02:24:58,031:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:24:59,689:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:24:59,719:INFO:Initializing predict_model()
+2025-03-11 02:24:59,720:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f7c91155070>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f7c7ea1bdc0>)
+2025-03-11 02:24:59,720:INFO:Checking exceptions
+2025-03-11 02:24:59,720:INFO:Preloading libraries
+2025-03-11 02:24:59,721:INFO:Set up data.
+2025-03-11 02:24:59,726:INFO:Set up index.
+2025-03-11 02:25:39,622:INFO:Initializing load_model()
+2025-03-11 02:25:39,629:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:25:41,286:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:25:41,318:INFO:Initializing predict_model()
+2025-03-11 02:25:41,319:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f7c936356a0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f7c7ea1bdc0>)
+2025-03-11 02:25:41,319:INFO:Checking exceptions
+2025-03-11 02:25:41,319:INFO:Preloading libraries
+2025-03-11 02:25:41,320:INFO:Set up data.
+2025-03-11 02:25:41,326:INFO:Set up index.
+2025-03-11 02:27:01,365:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:01,365:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:01,365:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:01,366:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:08,274:INFO:Initializing load_model()
+2025-03-11 02:27:08,275:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:27:11,011:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:27:11,043:INFO:Initializing predict_model()
+2025-03-11 02:27:11,044:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f4dbf2865e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f4dbfa5f700>)
+2025-03-11 02:27:11,045:INFO:Checking exceptions
+2025-03-11 02:27:11,045:INFO:Preloading libraries
+2025-03-11 02:27:11,046:INFO:Set up data.
+2025-03-11 02:27:11,053:INFO:Set up index.
+2025-03-11 02:27:11,200:WARNING:/app/services/ml_model_service.py:34: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64)) else float(x) if isinstance(x, (np.floating, np.float32, np.float64)) else x)
+
+2025-03-11 02:27:43,092:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:43,092:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:43,093:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:43,093:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:45,109:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:45,109:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:45,110:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:45,110:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:27:52,962:INFO:Initializing load_model()
+2025-03-11 02:27:52,962:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:27:55,894:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:27:55,924:INFO:Initializing predict_model()
+2025-03-11 02:27:55,924:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fcef4b475e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fcef7050700>)
+2025-03-11 02:27:55,925:INFO:Checking exceptions
+2025-03-11 02:27:55,926:INFO:Preloading libraries
+2025-03-11 02:27:55,926:INFO:Set up data.
+2025-03-11 02:27:55,932:INFO:Set up index.
+2025-03-11 02:27:56,077:WARNING:/app/services/ml_model_service.py:35: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64)) else float(x) if isinstance(x, (np.floating, np.float32, np.float64)) else x)
+
+2025-03-11 02:33:27,167:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:33:27,167:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:33:27,167:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:33:27,168:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:33:36,900:INFO:Initializing load_model()
+2025-03-11 02:33:36,901:INFO:load_model(model_name=/app/data/modelo_rf_v41, platform=None, authentication=None, verbose=True)
+2025-03-11 02:33:38,033:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 02:33:38,063:INFO:Initializing predict_model()
+2025-03-11 02:33:38,063:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f44290475e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=17))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=8485))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f44295ca700>)
+2025-03-11 02:33:38,063:INFO:Checking exceptions
+2025-03-11 02:33:38,064:INFO:Preloading libraries
+2025-03-11 02:33:38,064:INFO:Set up data.
+2025-03-11 02:33:38,070:INFO:Set up index.
+2025-03-11 02:33:38,202:WARNING:/app/services/ml_model_service.py:39: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-03-11 02:35:19,759:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:19,760:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:19,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:19,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:21,731:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:21,731:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:21,731:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:21,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 02:35:29,189:INFO:Initializing load_model()
+2025-03-11 02:35:29,190:INFO:load_model(model_name=/app/data/modelo_rf_v4, platform=None, authentication=None, verbose=True)
+2025-03-11 03:04:36,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:04:36,657:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:04:36,657:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:04:36,657:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:04:37,533:INFO:Initializing load_model()
+2025-03-11 03:04:37,534:INFO:load_model(model_name=/app/data/modelo_rf, platform=None, authentication=None, verbose=True)
+2025-03-11 03:04:39,775:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:04:39,814:INFO:Initializing predict_model()
+2025-03-11 03:04:39,815:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fb7d8547220>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Annual_Income',
+                                             'Monthly_Inhand_Salary',
+                                             'Num_Bank_Accounts',
+                                             'Num_Credit_Card', 'Interest_Rate',
+                                             'Num_of_Loan',
+                                             'Delay_from_due_date',
+                                             'Num_of_Delayed_Payment',
+                                             'Changed_Credit_Li...
+                                                                    'Last_Loan_2',
+                                                                    'Last_Loan_1'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Customer_ID'],
+                                    transformer=TargetEncoder(cols=['Customer_ID'],
+                                                              handle_missing='return_nan'))),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=30))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=3741))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fb7daa50700>)
+2025-03-11 03:04:39,815:INFO:Checking exceptions
+2025-03-11 03:04:39,816:INFO:Preloading libraries
+2025-03-11 03:04:39,817:INFO:Set up data.
+2025-03-11 03:04:39,824:INFO:Set up index.
+2025-03-11 03:04:39,986:WARNING:/app/services/ml_model_service.py:39: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-03-11 03:33:36,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:33:36,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:33:36,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:33:36,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:53,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:53,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:53,952:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:53,952:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:58,700:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:58,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:58,702:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:34:58,702:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:15,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:15,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:15,811:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:15,811:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:18,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:18,161:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:18,161:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:18,162:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:55,080:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:55,080:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:55,080:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:38:55,081:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:40:13,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:40:13,186:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:40:13,186:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:40:13,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:40:30,766:INFO:Initializing load_model()
+2025-03-11 03:40:30,767:INFO:load_model(model_name=/app/data/modelo_rf, platform=None, authentication=None, verbose=True)
+2025-03-11 03:40:32,259:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:41:15,007:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:41:15,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:41:15,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:41:15,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:41:21,717:INFO:Initializing load_model()
+2025-03-11 03:41:21,717:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:41:25,642:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:45:49,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:45:49,841:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:45:49,841:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:45:49,841:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 03:46:13,085:INFO:Initializing load_model()
+2025-03-11 03:46:13,086:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:46:16,378:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:46:16,401:INFO:Initializing predict_model()
+2025-03-11 03:46:16,401:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a724af0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa50aaaa550>)
+2025-03-11 03:46:16,401:INFO:Checking exceptions
+2025-03-11 03:46:16,401:INFO:Preloading libraries
+2025-03-11 03:46:16,402:INFO:Set up data.
+2025-03-11 03:46:16,406:INFO:Set up index.
+2025-03-11 03:46:38,284:INFO:Initializing load_model()
+2025-03-11 03:46:38,285:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:46:40,632:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:46:40,643:INFO:Initializing predict_model()
+2025-03-11 03:46:40,643:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a30ca30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa4f3e8a550>)
+2025-03-11 03:46:40,643:INFO:Checking exceptions
+2025-03-11 03:46:40,643:INFO:Preloading libraries
+2025-03-11 03:46:40,644:INFO:Set up data.
+2025-03-11 03:46:40,646:INFO:Set up index.
+2025-03-11 03:47:59,639:INFO:Initializing load_model()
+2025-03-11 03:47:59,640:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:48:02,423:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:48:02,436:INFO:Initializing predict_model()
+2025-03-11 03:48:02,437:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a718af0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa4f3e8af70>)
+2025-03-11 03:48:02,438:INFO:Checking exceptions
+2025-03-11 03:48:02,438:INFO:Preloading libraries
+2025-03-11 03:48:02,439:INFO:Set up data.
+2025-03-11 03:48:02,442:INFO:Set up index.
+2025-03-11 03:48:29,486:INFO:Initializing load_model()
+2025-03-11 03:48:29,487:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:48:31,328:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:48:31,339:INFO:Initializing predict_model()
+2025-03-11 03:48:31,339:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a7f06d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa4f3e8a940>)
+2025-03-11 03:48:31,339:INFO:Checking exceptions
+2025-03-11 03:48:31,339:INFO:Preloading libraries
+2025-03-11 03:48:31,340:INFO:Set up data.
+2025-03-11 03:48:31,342:INFO:Set up index.
+2025-03-11 03:48:31,501:WARNING:/app/services/ml_model_service.py:39: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-03-11 03:59:32,507:INFO:Initializing load_model()
+2025-03-11 03:59:32,508:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 03:59:35,303:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 03:59:35,318:INFO:Initializing predict_model()
+2025-03-11 03:59:35,318:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a7466d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa4f3e8aca0>)
+2025-03-11 03:59:35,319:INFO:Checking exceptions
+2025-03-11 03:59:35,319:INFO:Preloading libraries
+2025-03-11 03:59:35,319:INFO:Set up data.
+2025-03-11 03:59:35,322:INFO:Set up index.
+2025-03-11 03:59:35,479:WARNING:/app/services/ml_model_service.py:39: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-03-11 04:03:56,753:INFO:Initializing load_model()
+2025-03-11 04:03:56,753:INFO:load_model(model_name=/app/data/modelo_rf_light, platform=None, authentication=None, verbose=True)
+2025-03-11 04:04:00,404:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.11', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-03-11 04:04:00,418:INFO:Initializing predict_model()
+2025-03-11 04:04:00,419:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa50a718e50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Age', 'Monthly_Inhand_Salary',
+                                             'Delay_from_due_date',
+                                             'Monthly_Balance'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 RandomForestClassifier(n_jobs=-1, random_state=1415))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa4f3e8af70>)
+2025-03-11 04:04:00,419:INFO:Checking exceptions
+2025-03-11 04:04:00,419:INFO:Preloading libraries
+2025-03-11 04:04:00,419:INFO:Set up data.
+2025-03-11 04:04:00,422:INFO:Set up index.
+2025-03-11 04:04:00,567:WARNING:/app/services/ml_model_service.py:39: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-03-11 04:06:52,061:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 04:06:52,061:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 04:06:52,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-11 04:06:52,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
