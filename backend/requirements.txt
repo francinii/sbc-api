@@ -4,3 +4,6 @@ alembic
 sqlalchemy 
 asyncpg
 psycopg2-binary
+frozendict
+experta
+pycaret
