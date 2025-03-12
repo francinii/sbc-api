@@ -13,25 +13,15 @@ class MlModelService:
         return model
 
     def predict(self, data):
-        if not isinstance(data, dict):
-            raise ValueError("🚨 Expected input data to be a dictionary with feature names as keys.")
-
-        expected_features = self.model.feature_names_in_
-        missing_features = set(expected_features) - set(data.keys())
-
-        if missing_features:
-            raise ValueError(f"🚨 Missing expected features: {missing_features}")
-
-        # Convertir a DataFrame con las columnas en orden correcto
-        df = pd.DataFrame([data])[expected_features]
-
+        df = pd.DataFrame([data]) #[expected_features]
         print("🔍 Data used for prediction:\n", df.head())
 
         # Predicción
-        result = predict_model(self.model, data=df)
-
+        result = predict_model(self.model, data=df)        
         # 🔹 **Seleccionar solo las columnas deseadas**
-        selected_columns = ["Credit_Score", "prediction_label", "prediction_score"]
+        selected_columns = ["prediction_label", "prediction_score"]
+        print("🔍 Data used for prediction:\n")
+        print(result)
         result = result[selected_columns]
 
         # 🔹 **Convertir valores NumPy a Python estándar (int, float)**
@@ -41,3 +31,4 @@ class MlModelService:
 
         # Retornar solo la primera fila como diccionario
         return result.iloc[0].to_dict()
+        return {}
