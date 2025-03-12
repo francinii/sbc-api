@@ -11,9 +11,10 @@ class Applicant(BaseModel):
     ocupacion  : str
     meses_trabajando : int
     salario_mensual : float
-    fecha_nacimiento : str
+    edad : int
     deuda_total : float
     cuota_mensual_total : float
+    score_credito: float
 
     def convert_to_fact(self):
         return Applicant_Fact(
@@ -23,9 +24,10 @@ class Applicant(BaseModel):
             ocupacion=self.ocupacion,
             meses_trabajando=self.meses_trabajando,
             salario_mensual=self.salario_mensual,
-            fecha_nacimiento=self.fecha_nacimiento,
+            edad=self.edad,
             deuda_total=self.deuda_total,
-            cuota_mensual_total=self.cuota_mensual_total            
+            cuota_mensual_total=self.cuota_mensual_total,
+            score_credito=self.score_credito          
         )
 
 class MLModelBest(BaseModel):
