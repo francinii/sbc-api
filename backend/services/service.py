@@ -1,6 +1,6 @@
 import os
 from services.ml_model_service import MlModelService
-from models.request_models import Applicant, MLModelInput
+from models.request_models import Applicant
 from services.inference_motor_service import InferenceMotorServices
 
 class Service():
@@ -12,7 +12,7 @@ class Service():
     
     def call_model_ml(self, features: dict):
         # The model expects a 2D array (even for a single input)
-        return MlModelService('/app/data/modelo_rf').predict(features)
+        return MlModelService('/app/data/mejor_modelo_pycaret').predict(features)
     
     def call_model_ml_light(self, features: dict):
         # The model expects a 2D array (even for a single input)
