@@ -26,11 +26,8 @@ services:
         condition: service_healthy
     environment:
       - DATABASE_URL=postgresql://user:password@sbc_postgres:5432/creditScoreDB
-      # - MONGO_URL=mongodb://mongo:27017/mydatabase
     volumes:
       - ./backend:/app
-    #command: >
-    #  sh -c "uvicorn main:app --host 0.0.0.0 --port 8000"
 
   sbc_postgres:
     image: postgres:15
@@ -47,13 +44,5 @@ services:
       interval: 5s
       retries: 5
 
-#  mongo:
-#    image: mongo:6
-#    ports:
-#      - "27017:27017"
-#    volumes:
-#      - mongo_data:/data/db
-
 volumes:
   postgres_data:
-  #mongo_data:

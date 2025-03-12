@@ -45,9 +45,13 @@ class InferenceMotorServices(KnowledgeEngine):
             if applicant_value is None:
                 print(f"Advertencia: {field} no encontrado en Cliente. Ignorando condición.")
                 return False  # Si falta un campo requerido, la regla no se aplica
-            for op, value in constraints.items():
-                if op in operators and not operators[op](applicant_value, value):
-                    return False
+            
+            if isinstance(constraints, str):
+                return applicant_value == constraints
+            else:
+                for op, value in constraints.items():
+                    if op in operators and not operators[op](applicant_value, value):
+                        return False
         return True
 
     def apply_rules(self, applicant: Cliente):

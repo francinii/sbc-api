@@ -19,4 +19,4 @@ class Service():
         return MlModelService('/app/data/modelo_rf_light').predict(features)
     
     def call_motor_inference(self, applicant: Applicant):       
-        return InferenceMotorServices('/app/data/rules.json').inference_call(applicant)
+        return InferenceMotorServices('/app/data/rules_new.json').inference_call(applicant)
