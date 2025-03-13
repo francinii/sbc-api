@@ -1,24 +1,14 @@
 // "use client";
 
 // import { useState } from "react";
+// import { useForm } from "react-hook-form";
+// import { zodResolver } from "@hookform/resolvers/zod"; 
 // import { Button } from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
-// import { Area, AreaChart, CartesianGrid, XAxis, LineChart, Line } from "recharts";
-// import { TrendingUp, ChevronDown, ChevronUp, Landmark, CircleCheckBig, CircleOff } from "lucide-react";
-// import {
-//   ChartConfig,
-//   ChartContainer,
-//   ChartTooltip,
-//   ChartTooltipContent,
-// } from "@/components/ui/chart";
+// import { Card } from "@/components/ui/card";
+// import { ChevronDown, ChevronUp, Landmark } from "lucide-react";
+// import ScoreForm from "@/components/score-form";
+// import ScoreResult from "@/components/score-result";
+// import { ScoreFormSchema } from "@/schemas/score-form-schema"; 
 
 // const chartData = [
 //   { factor: "Historial de Pagos", usuario: 80, promedio: 75 },
@@ -46,119 +36,78 @@
 //   { year: "2023", usuario: 48000, promedio: 49000 },
 // ];
 
-// const chartConfig = {
-//   usuario: {
-//     label: "Usuario",
-//     color: "#2563eb",
-//   },
-//   promedio: {
-//     label: "Promedio del Mercado",
-//     color: "#60a5fa",
-//   },
-// } satisfies ChartConfig;
-
 // export default function ConsultaScoreCrediticio() {
-//   const [resultado, setResultado] = useState<string | null>(null);
+//   const [resultado, setResultado] = useState<{ regla: string; descripcion: string; puntos: string }[]>([]);
 //   const [isExpanded, setIsExpanded] = useState(true);
 
-//   const calcularScore = () => {
-//     const esApto = Math.random() > 0.5 ? "Es Apto" : "No es Apto";
-//     setResultado(esApto);
-//   };
+
+//   const [creditScore, setCreditScore] = useState<string>("good");
+
+//   // const form = useForm({
+//   //   resolver: zodResolver(ScoreFormSchema),
+//   //   defaultValues: {
+//   //     tipoDocumento: undefined,
+//   //     cedula: "",
+//   //     nombre: "",
+//   //     apellido: "",
+//   //     ocupacion: "",
+//   //     meses_trabajando: 0,
+//   //     salario_mensual: 0,
+//   //     fecha_nacimiento: undefined,
+//   //     deuda_total: 0,
+//   //     cuota_mensual_total: 0,
+//   //   },
+//   // });
+
+//   const form = useForm({
+//     resolver: zodResolver(ScoreFormSchema),
+//     defaultValues: {
+//       tipoDocumento: undefined,
+//       cedula: "",
+//       nombre: "Andres",
+//       apellido: "Salas",
+//       ocupacion: undefined,
+//       meses_trabajando: 10,
+//       salario_mensual: 10000000000000000,
+//       fecha_nacimiento: undefined,
+//       deuda_total: 10,
+//       cuota_mensual_total: 10,
+//     },
+//   });
 
 //   return (
-//     <div className="flex flex-col items-center min-h-screen w-full p-4">
+//     <div className="flex flex-col items-center w-full p-4">
 //       <Card className="w-full p-6 shadow-lg bg-white mb-6">
 //         <div className="flex justify-between items-center">
 //           <h2 className="text-xl font-semibold text-center flex-grow">
-//             <Landmark className="inline-block mb-4"/>Consulta de Score Crediticio
+//             <Landmark className="inline-block mb-1"/> Consulta de Score Crediticio
 //           </h2>
 //           <Button variant="ghost" onClick={() => setIsExpanded(!isExpanded)}>
 //             {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
 //           </Button>
 //         </div>
-//         {isExpanded && (
-//           <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-//             <Input placeholder="Nombre" />
-//             <Input placeholder="Apellidos" />
-//             <Input placeholder="Número de cédula" />
-//             <Input placeholder="Ocupación" />
-//             <Input placeholder="Salario mensual" type="number" />
-//             <Input placeholder="Salario anual bruto" type="number" />
-//             <Input placeholder="Meses en el trabajo actual" type="number" />
-//             <div className="col-span-1 md:col-span-3">
-//               <Button className="w-full mt-4" onClick={calcularScore}>
-//                 Consultar
-//               </Button>
-//             </div>
-//           </CardContent>
-//         )}
+//         {isExpanded && <ScoreForm form={form} onCalculate={setResultado} />}
 //       </Card>
-
-//       {resultado && (
-//         <Card className="w-full mt-6 p-6 shadow-lg bg-white">
-//         <h2 className="text-xl font-semibold text-center flex items-center justify-center gap-2">
-//           Resultado: {resultado}
-//         </h2>
-//         <p className="text-center mt-2 text-gray-700">
-//           {resultado === "Es Apto"
-//             ? "El puntaje obtenido permite al usuario acceder a tasas desde 7.5% hasta 12% para créditos que van desde $5,000 hasta $50,000."
-//             : "No aplica debido a un historial de pagos inconsistentes y un alto nivel de endeudamiento reciente."}
-//         </p>
-//           <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//             <Card>
-//               <CardHeader>
-//                 <CardTitle>Comparación de Factores</CardTitle>
-//                 <CardDescription>
-//                   Comparación del score crediticio con el promedio del mercado
-//                 </CardDescription>
-//               </CardHeader>
-//               <CardContent>
-//                 <ChartContainer config={chartConfig}>
-//                   <AreaChart accessibilityLayer data={chartData} margin={{ left: 12, right: 12 }}>
-//                     <CartesianGrid vertical={false} />
-//                     <XAxis dataKey="factor" tickLine={false} axisLine={false} tickMargin={8} />
-//                     <ChartTooltip cursor={false} content={<ChartTooltipContent indicator="dot" />} />
-//                     <Area dataKey="usuario" type="natural" fill="#2563eb" fillOpacity={0.4} stroke="#2563eb" stackId="a" />
-//                     <Area dataKey="promedio" type="natural" fill="#60a5fa" fillOpacity={0.4} stroke="#60a5fa" stackId="a" />
-//                   </AreaChart>
-//                 </ChartContainer>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardHeader>
-//                 <CardTitle>Evolución del Salario Bruto</CardTitle>
-//                 <CardDescription>
-//                   Comparación del salario bruto del usuario con el promedio ideal para préstamos
-//                 </CardDescription>
-//               </CardHeader>
-//               <CardContent>
-//                 <ChartContainer config={chartConfig}>
-//                   <LineChart accessibilityLayer data={salarioBrutoData} margin={{ left: 12, right: 12 }}>
-//                     <CartesianGrid vertical={false} />
-//                     <XAxis dataKey="year" tickLine={false} axisLine={false} tickMargin={8} />
-//                     <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />
-//                     <Line dataKey="usuario" type="natural" stroke="#2563eb" strokeWidth={2} dot={{ fill: "#2563eb" }} activeDot={{ r: 6 }} />
-//                     <Line dataKey="promedio" type="natural" stroke="#60a5fa" strokeWidth={2} dot={{ fill: "#60a5fa" }} activeDot={{ r: 6 }} />
-//                   </LineChart>
-//                 </ChartContainer>
-//               </CardContent>
-//             </Card>
-//           </CardContent>
-//         </Card>
-//       )}
+  
+//       {resultado.length > 0 && (
+//         <ScoreResult CreditScore={creditScore} resultado={resultado} chartData={chartData} salarioBrutoData={salarioBrutoData} />
+// )}
 //     </div>
 //   );
+  
 // }
 
 "use client";
 
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod"; 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronDown, ChevronUp, Landmark } from "lucide-react";
 import ScoreForm from "@/components/score-form";
 import ScoreResult from "@/components/score-result";
+import { ScoreFormSchema } from "@/schemas/score-form-schema"; 
 
 const chartData = [
   { factor: "Historial de Pagos", usuario: 80, promedio: 75 },
@@ -187,8 +136,35 @@ const salarioBrutoData = [
 ];
 
 export default function ConsultaScoreCrediticio() {
-  const [resultado, setResultado] = useState<string | null>(null);
+  const [sbc_model, setResultado] = useState<{ regla: string; descripcion: string; puntos: string }[]>([]);
+  const [score_crediticio, setCreditScore] = useState<{ prediction_label: string; prediction_score: number }>({
+    prediction_label: "",
+    prediction_score: 0,
+  });
   const [isExpanded, setIsExpanded] = useState(true);
+
+  // 🏷 Maneja la respuesta del formulario y actualiza estado de resultado y creditScore
+  const handleCalculate = (reglas: any, scoreData: any) => {
+    setResultado(reglas);
+    setCreditScore(scoreData);
+  };
+
+  // ✅ Formulario con valores predeterminados
+  const form = useForm({
+    resolver: zodResolver(ScoreFormSchema),
+    defaultValues: {
+      tipoDocumento: undefined,
+      cedula: "",
+      nombre: "Andres",
+      apellido: "Salas",
+      ocupacion: undefined,
+      meses_trabajando: 12,
+      salario_mensual: 5000,
+      fecha_nacimiento: undefined,
+      deuda_total: 1000,
+      cuota_mensual_total: 300,
+    },
+  });
 
   return (
     <div className="flex flex-col items-center w-full p-4">
@@ -201,9 +177,12 @@ export default function ConsultaScoreCrediticio() {
             {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
           </Button>
         </div>
-        {isExpanded && <ScoreForm onCalculate={setResultado} />}
+        {isExpanded && <ScoreForm form={form} onCalculate={handleCalculate} />}
       </Card>
-      {resultado && <ScoreResult resultado={resultado} chartData={chartData} salarioBrutoData={salarioBrutoData} />}
+      
+      {score_crediticio.prediction_score > 0 && (
+        <ScoreResult score={score_crediticio} reglas={sbc_model} chartData={chartData} salarioBrutoData={salarioBrutoData} />
+      )}
     </div>
   );
 }
