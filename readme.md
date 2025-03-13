@@ -7,13 +7,13 @@ Para ejecutar este proyecto, es necesario tener instalados git, docker y docker 
 - [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/get-started/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-
+---
 
 ## 📌 Clonar los archivos en tu computadora
 Nota: es requerido descargar dos repositorios. 
-- El primer repositorio contiene el backend y fronted del sistema basado en conocimiento. 
-- El segundo repositorio corresponde al modelo creado. 
-Para esto es necesario clonar el repositorio en tu local. Para esto, diríjase a la carpeta de su preferencia y ejecute los siguientes comandos
+- El primer repositorio "sbc-api" contiene el backend y frontend del sistema basado en conocimiento. 
+- El segundo repositorio "SCORE" corresponde al proceso de análisis de las variables del modelo.
+
 
 
 Sistema basado en conocimiento
@@ -23,29 +23,27 @@ git clone https://github.com/francinii/sbc-api.git
 
 Modelo
 ```sh
-git https://github.com/adoljc87/SCORE.git
+git clone https://github.com/adoljc87/SCORE.git
 ```
+Nos dirijimos a la carpta del proyecto
 
 ```sh
 cd sbc-api
 ```
-
+---
 # 🚀 Inicialización del Proyecto sbc-api usando Docker
 ## 📂 Requisitos
-1. Antes de correr la aplicación es necesario agregar el archivo "mejor_modelo_pycaret.pkl" en la carpeta backend/data/mejor_modelo_pycaret.pkl
-Este archivo se adjunta en la carpeta comprimida, sin embargo, tambien puede generarse corriendo el modelo desde el proyecto SCORE previamente descargado. 
+1. Antes de correr la aplicación es necesario agregar el archivo **"mejor_modelo_pycaret.pkl"** en la carpeta **backend/data/mejor_modelo_pycaret.pkl** del proyecto sbc-api
+Para usar el modelo hay dos opciones. 
+- Opción 1: Crear el ".pkl". Se debe correr este proyecto desde colab https://colab.research.google.com/drive/190QkD9spLwnaqjLXsbFe99timwpazL6f?usp=sharing (Se dieron permisos a la cuenta del profesor asociada al Cenfotec). Una vez en colab puede correr celda por celda el cuaderno o bien, en el menú principal seleccionar "Entorno de ejecución" -> "Ejecutar todo".
+- Opción 2: Usar el pkl que se adjunto en el .zip descargado.
 
 
 ## 📂 Instalación y Configuración
 Ejecuta los siguientes comandos dentro de la carpeta `sbc-api/` para inicializar el proyecto:
 
 
-### 🔹 Opción 1: Construcción y ejecución en un solo paso
-```sh
-docker compose up --build
-```
-
-### 🔹 Opción 2: Comandos por separado
+### 🔹Comando para construir el contenedor
 Si el comando anterior falla, puedes ejecutar los pasos por separado:
 ```sh
 docker compose build
@@ -65,6 +63,7 @@ Una vez iniciado el entorno con Docker, puedes acceder a los aplicativos en las 
 
 ---
 Si tienes algún problema, verifica que los contenedores estén corriendo con:
+
 ```sh
 docker ps
 ```
