@@ -36,10 +36,10 @@ cd sbc-api
 ## 📂 Requisitos
 1. Antes de correr la aplicación es necesario agregar el archivo **"mejor_modelo_pycaret.pkl"** en la carpeta **backend/data/mejor_modelo_pycaret.pkl** del proyecto sbc-api
 Para usar el modelo hay dos opciones. 
-- Opción 1: Crear el ".pkl". Se debe correr este proyecto desde colab https://colab.research.google.com/drive/190QkD9spLwnaqjLXsbFe99timwpazL6f?usp=sharing (Se dieron permisos a la cuenta del profesor asociada al Cenfotec). Una vez en colab puede correr celda por celda el cuaderno o bien, en el menú principal seleccionar "Entorno de ejecución" -> "Ejecutar todo".
-Una vez ejecutado el cuaderno, se debe descargar el archivo mejor_modelo_pycaret generado.pkl (El archivo se puede visualizar en Colab en el menú lateral último icono de carpeta).
-Este proceso puede tardar unos minutos. (15 minutos aproximadamente).
-- Opción 2: Usar el pkl que se adjunto en el .zip descargado.(Esto depende de si la plataforma Moodle nos deje cargar el archivo ya que es un archivo pesado).
+- **Opción 1:** Crear el ".pkl". Se debe correr este proyecto desde colab https://colab.research.google.com/drive/190QkD9spLwnaqjLXsbFe99timwpazL6f?usp=sharing (Se dieron permisos a la cuenta del profesor asociada al Cenfotec). Una vez en Colab puede correr celda por celda el cuaderno o bien, en el menú principal seleccionar "Entorno de ejecución" -> "Ejecutar todo".
+Una vez ejecutado el cuaderno, se debe descargar el archivo mejor_modelo_pycaret.pkl (El archivo se puede visualizar en Colab en el menú lateral último icono de carpeta).
+Importante: El proceso de ejecución del modelo puede tardar 15 minutos aproximadamente.
+- **Opción 2:** Usar el pkl que se adjunto en el .zip descargado.(Esto depende de si la plataforma Moodle nos deje cargar el archivo ya que es un archivo pesado).
 
 
 ## 📂 Instalación y Configuración
@@ -60,6 +60,7 @@ Una vez iniciado el entorno con Docker, puedes acceder a los aplicativos en las 
 
 ### 🔹 Frontend
 📍 [http://localhost:3000/](http://localhost:3000/)
+**Nota importante**: es posible que la llamada del modelo desde el formulario de la interfaz dure un poco. (Si la solicitud está en proceso, se verá el botón como "Procesando").
 
 ### 🔹 Backend
 📍 [http://localhost:8000/docs](http://localhost:8000/docs)
