@@ -497,17 +497,20 @@ export default function ConsultaScoreCrediticioBatch() {
                     <AlertDialogTitle>Reglas de Evaluación</AlertDialogTitle>
                 </AlertDialogHeader>
                 <AlertDialogDescription>
+                  <div className="space-y-2">
                     {rulesData.length > 0 ? (
-                        <ul className="list-disc ml-5 space-y-2">
+                      <ul className="list-disc ml-5 space-y-2">
                         {rulesData.map((rule, index) => (
-                            <li key={index}>
-                            <strong>{rule.regla}:</strong> {rule.descripcion} (<span className="text-red-500">{rule.puntos} puntos</span>)
-                            </li>
+                          <li key={index}>
+                            <strong>{rule.regla}:</strong> {rule.descripcion} (
+                            <span className="text-red-500">{rule.puntos} puntos</span>)
+                          </li>
                         ))}
-                        </ul>
+                      </ul>
                     ) : (
-                        <div>No hay reglas disponibles.</div>
+                      <div>No hay reglas disponibles.</div>
                     )}
+                  </div>
                 </AlertDialogDescription>
                 <AlertDialogFooter>
                     <AlertDialogAction onClick={() => setRulesDialogOpen(false)}>Cerrar</AlertDialogAction>

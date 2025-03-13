@@ -180,6 +180,7 @@ export const columns: ColumnDef<Rule>[] = [
     enableSorting: false,
     enableHiding: false,
   },
+  
   {
     accessorKey: "condition",
     header: ({ column }) => (
@@ -194,12 +195,12 @@ export const columns: ColumnDef<Rule>[] = [
     cell: ({ row }) => {
       const condition = row.getValue("condition");
   
-      // Ensure condition is an object before processing
+      // Verificar que la condición es un objeto
       if (!condition || typeof condition !== "object") {
         return <div className="text-gray-500 italic">No conditions</div>;
       }
   
-      // Function to format conditions into readable text
+      // Formatear las condiciones en texto legible
       const formatCondition = (conditionObj: Record<string, any>) => {
         return Object.entries(conditionObj)
           .map(([key, value]) => {
@@ -232,10 +233,15 @@ export const columns: ColumnDef<Rule>[] = [
           .join(" and ");
       };
   
-      return <div className="capitalize">{formatCondition(condition)}</div>;
+      return (
+        <div className="whitespace-normal break-words p-2 max-w-xs sm:max-w-md">
+          {formatCondition(condition)}
+        </div>
+      );
     },
   },
   
+
   {
     accessorKey: "score_change",
     header: ({ column }) => {

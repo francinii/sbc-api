@@ -155,14 +155,14 @@ export default function ConsultaScoreCrediticio() {
     defaultValues: {
       tipoDocumento: undefined,
       cedula: "",
-      nombre: "Andres",
-      apellido: "Salas",
+      nombre: "",
+      apellido: "",
       ocupacion: undefined,
-      meses_trabajando: 12,
-      salario_mensual: 5000,
+      meses_trabajando: 0,
+      salario_mensual: 0,
       fecha_nacimiento: undefined,
-      deuda_total: 1000,
-      cuota_mensual_total: 300,
+      deuda_total: 0,
+      cuota_mensual_total: 0,
     },
   });
 

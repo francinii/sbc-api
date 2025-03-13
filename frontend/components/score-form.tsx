@@ -125,7 +125,7 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
 
         <FormField control={form.control} name="balance_mensual" render={({ field }) => (
           <FormItem>
-            <FormLabel>Balanace mensual</FormLabel>
+            <FormLabel>Balance mensual</FormLabel>
             <FormControl>
               <Input type="number" placeholder="Ingrese su balance mensual" {...field} />
             </FormControl>
