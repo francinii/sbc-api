@@ -3,12 +3,12 @@
 
 
 ## 📌 Prerequisitos
-Para ejecutar este proyecto, es necesario tener instalados git, docker y docker compose:
+Para ejecutar este proyecto, es necesario tener instalados git, docker y docker compose (se recomienda Compose V2):
 - El proyecto fue probado en sistemas operativos con Windows.
 - [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/get-started/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
----
+--- 
 
 ## 📌 Clonar los archivos en tu computadora
 Nota: es requerido descargar dos repositorios. 
