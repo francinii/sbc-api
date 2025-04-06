@@ -73,6 +73,7 @@ class InferenceMotorServices(KnowledgeEngine):
 
     def inference_call(self, applicant: Applicant) -> list:
         #rules_file = "rules.json"
+        #print(applicant)
         applicant_fact = applicant.convert_to_fact()
         self.reset()
         self.declare(applicant_fact)

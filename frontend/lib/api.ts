@@ -19,18 +19,23 @@ export const submitApplicantData = async (
       Delay_from_due_date: applicant.delay_from_due_date,
       Monthly_Balance: applicant.balance_mensual,
     };
-
+    
     // ✅ Realizar ambas llamadas a la API en paralelo
-    const [sbcModelResponse, mlBestModelResponse] = await Promise.all([
-      fetch(`${API_BASE_URL}/sbc-model`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(applicant),
-      }),
+    const [mlBestModelResponse] = await Promise.all([
       fetch(`${API_BASE_URL}/ml-best-model`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(mlBestModelData),
+      }),
+    ]);
+    const mlBestModelResult: APIResponse = await mlBestModelResponse.json();
+    applicant.score_credito = mlBestModelResult.prediction_score || 0;
+  
+    const [sbcModelResponse] = await Promise.all([
+      fetch(`${API_BASE_URL}/sbc-model`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(applicant),
       }),
     ]);
 
@@ -41,7 +46,6 @@ export const submitApplicantData = async (
 
     // ✅ Convertir las respuestas a JSON
     const sbcModelResult: APIResponse = await sbcModelResponse.json();
-    const mlBestModelResult: APIResponse = await mlBestModelResponse.json();
 
     return {
       sbc_model: sbcModelResult,
