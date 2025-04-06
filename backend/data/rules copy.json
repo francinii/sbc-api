@@ -1,32 +1,32 @@
 [
     {
         "condition": {"income": {"$lt": 1000}},
-        "score_change": -50,
+        "score_change": 0,
         "message": "Solicitud rechazada: Ingreso menor a 1000 dólares."
     },
     {
         "condition": {"credit_history": {"$lt": 500}},
-        "score_change": -30,
+        "score_change": 0,
         "message": "Historial crediticio muy bajo. Baja probabilidad de aprobación."
     },
     {
         "condition": {"debt_to_income": {"$gt": 0.5}},
-        "score_change": -20,
+        "score_change": 0,
         "message": "Alta relación deuda/ingreso. Reducción de probabilidad de aprobación."
     },
     {
         "condition": {"job_stability": {"$lt": 1}},
-        "score_change": -20,
+        "score_change": 0,
         "message": "Poca estabilidad laboral. Baja probabilidad de aprobación."
     },
     {
         "condition": {"income": {"$gte": 3000}, "credit_history": {"$gte": 700}, "debt_to_income": {"$lt": 0.3}, "job_stability": {"$gte": 3}},
-        "score_change": 50,
+        "score_change": 0,
         "message": "Alta probabilidad de aprobación."
     },
     {
         "condition": {"income": {"$gte": 2000}, "credit_history": {"$gte": 600}, "debt_to_income": {"$lt": 0.4}, "job_stability": {"$gte": 2}},
-        "score_change": 30,
+        "score_change": 0,
         "message": "Probabilidad moderada de aprobación."
     }
 ]

@@ -163,7 +163,7 @@ export const columns: ColumnDef<Applicant>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Salario Mensual
+          Salario Mensual(Dólares)
           <ArrowUpDown />
         </Button>
       )

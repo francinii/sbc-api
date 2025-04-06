@@ -95,7 +95,7 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
 
         <FormField control={form.control} name="salario_mensual" render={({ field }) => (
           <FormItem>
-            <FormLabel>Salario mensual</FormLabel>
+            <FormLabel>Salario mensual (Dólares)</FormLabel>
             <FormControl>
               <Input type="number" placeholder="Ingrese su salario mensual" {...field} />
             </FormControl>

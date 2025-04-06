@@ -40,7 +40,7 @@ const data = [
       cuota_mensual_total: { "$gt": 0.2 },
       score_credito: { "$gte": 0.4, "$lte": 0.6 }
     },
-    score_change: -20,
+    score_change: 0,
     effect: "warning",
     message: "Se recomienda reducir otras deudas antes de solicitar crédito."
   },
@@ -49,7 +49,7 @@ const data = [
       deuda_total: { "$lt": 0.5 },
       cuota_mensual_total: { "$lt": 0.1 }
     },
-    score_change: 30,
+    score_change: 0,
     effect: "good",
     message: "Acceso a mejores tasas de interés."
   },
@@ -58,7 +58,7 @@ const data = [
       ocupacion: "Riesgo Alto",
       meses_trabajando: { "$gte": 24 }
     },
-    score_change: 10,
+    score_change: 0,
     effect: "neutral",
     message: "Evaluar caso detalladamente antes de tomar una decisión."
   },
@@ -66,7 +66,7 @@ const data = [
     condition: {
       cuota_mensual_total: { "$gt": 0.3 }
     },
-    score_change: -50,
+    score_change: 0,
     effect: "bad",
     message: "Rechazo del crédito debido a alta cuota mensual."
   },
@@ -75,7 +75,7 @@ const data = [
       meses_trabajando: { "$lt": 6 },
       score_credito: { "$lt": 0.4 }
     },
-    score_change: -40,
+    score_change: 0,
     effect: "bad",
     message: "Rechazo automático por historial crediticio bajo y poca estabilidad laboral."
   },
@@ -84,7 +84,7 @@ const data = [
       ocupacion: "Riesgo Alto",
       meses_trabajando: { "$lt": 6 }
     },
-    score_change: -15,
+    score_change: 0,
     effect: "warning",
     message: "Requiere mayor evaluación financiera antes de rechazar."
   },
@@ -94,7 +94,7 @@ const data = [
       ocupacion: "Riesgo Medio",
       score_credito: { "$gte": 0.4, "$lte": 0.6 }
     },
-    score_change: -10,
+    score_change: 0,
     effect: "neutral",
     message: "Revisión adicional necesaria antes de aprobar crédito."
   },
@@ -104,7 +104,7 @@ const data = [
       deuda_total: { "$lt": 0.5 },
       cuota_mensual_total: { "$lt": 0.2 }
     },
-    score_change: 40,
+    score_change: 0,
     effect: "good",
     message: "Aprobación con condiciones favorables."
   },
@@ -114,7 +114,7 @@ const data = [
       cuota_mensual_total: { "$lt": 0.1 },
       meses_trabajando: { "$gte": 24 }
     },
-    score_change: 5,
+    score_change: 0,
     effect: "neutral",
     message: "Evaluar alternativas de crédito con garantías adicionales."
   },
@@ -124,7 +124,7 @@ const data = [
       meses_trabajando: { "$gte": 24 },
       score_credito: { "$gt": 0.7 }
     },
-    score_change: 50,
+    score_change: 0,
     effect: "good",
     message: "Aprobación automática del crédito."
   },
@@ -134,7 +134,7 @@ const data = [
       score_credito: { "$gte": 0.4, "$lte": 0.6 },
       deuda_total: { "$gt": 0.5 }
     },
-    score_change: -15,
+    score_change: 0,
     effect: "warning",
     message: "Establecer límite de crédito reducido."
   },
@@ -144,7 +144,7 @@ const data = [
       deuda_total: { "$gt": 1.0 },
       score_credito: { "$lt": 0.4 }
     },
-    score_change: -50,
+    score_change: 0,
     effect: "bad",
     message: "Rechazo del crédito por alta deuda y bajo score."
   }
@@ -152,7 +152,7 @@ const data = [
 
 export type Rule = {
     condition: {};
-    score_change: number;
+    score_change: 0;
     message: string;
     effect: string;
 }

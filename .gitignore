@@ -25,3 +25,4 @@ coverage.xml
 *.egg-info/
 dist/
 build/
+/backend/logs.log

@@ -4,7 +4,7 @@
           "cuota_mensual_total": { "$gt": 0.2 },
           "score_credito": { "$gte": 0.4, "$lte": 0.6 }
       },
-      "score_change": -20,
+      "score_change": 0,
       "message": "Se recomienda reducir otras deudas antes de solicitar crédito.",
       "effect": "warning"
   },
@@ -13,7 +13,7 @@
           "deuda_total": { "$lt": 0.5 },
           "cuota_mensual_total": { "$lt": 0.1 }
       },
-      "score_change": 30,
+      "score_change": 0,
       "message": "Acceso a mejores tasas de interés.",
       "effect": "good"
   },
@@ -22,7 +22,7 @@
           "ocupacion": "Riesgo Alto",
           "meses_trabajando": { "$gte": 24 }
       },
-      "score_change": 10,
+      "score_change": 0,
       "message": "Evaluar caso detalladamente antes de tomar una decisión.",
       "effect": "neutral"
   },
@@ -30,7 +30,7 @@
       "condition": {
           "cuota_mensual_total": { "$gt": 0.3 }
       },
-      "score_change": -50,
+      "score_change": 0,
       "message": "Rechazo del crédito debido a alta cuota mensual.",
       "effect": "bad"
   },
@@ -39,7 +39,7 @@
           "meses_trabajando": { "$lt": 6 },
           "score_credito": { "$lt": 0.4 }
       },
-      "score_change": -40,
+      "score_change": 0,
       "message": "Rechazo automático por historial crediticio bajo y poca estabilidad laboral.",
       "effect": "bad"
   },
@@ -48,7 +48,7 @@
           "ocupacion": "Riesgo Alto",
           "meses_trabajando": { "$lt": 6 }
       },
-      "score_change": -15,
+      "score_change": 0,
       "message": "Requiere mayor evaluación financiera antes de rechazar.",
       "effect": "warning"
   },
@@ -58,7 +58,7 @@
           "ocupacion": "Riesgo Medio",
           "score_credito": { "$gte": 0.4, "$lte": 0.6 }
       },
-      "score_change": -10,
+      "score_change": 0,
       "message": "Revisión adicional necesaria antes de aprobar crédito.",
       "effect": "neutral"
   },
@@ -68,7 +68,7 @@
           "deuda_total": { "$lt": 0.5 },
           "cuota_mensual_total": { "$lt": 0.2 }
       },
-      "score_change": 40,
+      "score_change": 0,
       "message": "Aprobación con condiciones favorables.",
       "effect": "good"
   },
@@ -78,8 +78,7 @@
           "cuota_mensual_total": { "$lt": 0.1 },
           "meses_trabajando": { "$gte": 24 }
       },
-      "score_change": 5,
-      "message": "Evaluar alternativas de crédito con garantías adicionales.",
+      "score_change": 0,      "message": "Evaluar alternativas de crédito con garantías adicionales.",
       "effect": "neutral"
   },
   {
@@ -88,7 +87,7 @@
           "meses_trabajando": { "$gte": 24 },
           "score_credito": { "$gt": 0.7 }
       },
-      "score_change": 50,
+      "score_change": 0,
       "message": "Aprobación automática del crédito.",
       "effect": "good"
   },
@@ -98,7 +97,7 @@
           "score_credito": { "$gte": 0.4, "$lte": 0.6 },
           "deuda_total": { "$gt": 0.5 }
       },
-      "score_change": -15,
+      "score_change": 0,
       "message": "Establecer límite de crédito reducido.",
       "effect": "warning"
   },
@@ -108,7 +107,7 @@
           "deuda_total": { "$gt": 1.0 },
           "score_credito": { "$lt": 0.4 }
       },
-      "score_change": -50,
+      "score_change": 0,
       "message": "Rechazo del crédito por alta deuda y bajo score.",
       "effect": "bad"
   }
