@@ -45,9 +45,8 @@ Importante: El proceso de ejecución del modelo puede tardar 15 minutos aproxima
 ## 📂 Instalación y Configuración
 Ejecuta los siguientes comandos dentro de la carpeta `sbc-api/` para inicializar el proyecto:
 
-
 ### 🔹Comando para construir el contenedor
-Si el comando anterior falla, puedes ejecutar los pasos por separado:
+
 ```sh
 docker compose build
 ```
@@ -60,7 +59,10 @@ Una vez iniciado el entorno con Docker, puedes acceder a los aplicativos en las 
 
 ### 🔹 Frontend
 📍 [http://localhost:3000/](http://localhost:3000/)
-**Nota importante**: es posible que la llamada del modelo desde el formulario de la interfaz dure un poco. (Si la solicitud está en proceso, se verá el botón como "Procesando").
+**Nota importante**: En el archivo "Avance Proyecto I" se adjuntan algunos ejemplos de como se pueden realizar pruebas desde el Frontend.
+Es posible que la llamada del modelo desde el formulario de la interfaz dure un poco. (Si la solicitud está en proceso, se verá el botón como "Procesando").
+**Nota importante 2**: para correr en batch se adjunta en el .zip un archivo "applicants_sample.xlsx" que puede correrse como ejemplo.
+
 
 ### 🔹 Backend
 📍 [http://localhost:8000/docs](http://localhost:8000/docs)

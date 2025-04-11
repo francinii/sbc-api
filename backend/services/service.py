@@ -1,10 +1,13 @@
 import os
+
+from requests import Session
 from services.ml_model_service import MlModelService
 from models.request_models import Applicant
 from services.inference_motor_service import InferenceMotorServices
 
 class Service():
-    def __init__(self):
+    def __init__(self, db: Session):
+        self.db = db
         pass
 
     def call_model(self, items: float, items2: float):
@@ -18,5 +21,5 @@ class Service():
         # The model expects a 2D array (even for a single input)
         return MlModelService('/app/data/modelo_rf_light').predict(features)
     
-    def call_motor_inference(self, applicant: Applicant):       
-        return InferenceMotorServices('/app/data/rules_new.json').inference_call(applicant)
+    def call_motor_inference(self, applicant: Applicant):         
+        return InferenceMotorServices('/app/data/rules_new.json', self.db).inference_call(applicant)
