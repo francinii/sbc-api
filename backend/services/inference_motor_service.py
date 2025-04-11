@@ -1,4 +1,6 @@
 
+from requests import Session
+from services.rule_service import RuleService
 from models.response_models import ApplicantResponse
 from models.request_models import Applicant
 from experta import *
@@ -20,10 +22,13 @@ if not hasattr(collections, 'Mapping'):
     score = Field(int, default=0)
 '''
 class InferenceMotorServices(KnowledgeEngine):
-    def __init__(self, rules_file):
+    def __init__(self, rules_file, db:Session):
         super().__init__()
+        self.db = db
         self.score = 0
-        self.rules = self.load_rules(rules_file)
+        #self.rules = self.load_rules(rules_file)
+        self.rules_service = RuleService(db)
+        self.rules = self.rules_service.format_rules() 
         self.answer_obj= []
 
     def load_rules(self, rules_file):
