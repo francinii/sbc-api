@@ -17,3 +17,5 @@ class GraphicResponseModel(BaseModel):
     lines: List[LineData]
     title: str
     description: str
+    is_categorical: bool = False
+             

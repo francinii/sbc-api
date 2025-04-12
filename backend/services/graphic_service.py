@@ -66,35 +66,8 @@ class GraphicService:
             is_categorical=False,
         )
 
-    def graphic_01(self):
-        col='Monthly_Inhand_Salary'
-        title=f"Proportion of Credit Score Categories by {col}"
-        description="Muestra cómo se distribuyen las proporciones de tipos de crédito por deciles."
-        return self.graphic_template(col, title, description)
-
-    def graphic_02(self):
-        col='Num_Credit_Card'
-        title=f"Proportion of Credit Score Categories by {col}"
-        description="Muestra cómo se distribuyen las proporciones de tipos de crédito por deciles."
-        return self.graphic_template(col, title, description)
-
-
-    def graphic_03(self):
-        col='Num_of_Loan'
-        title=f"Proportion of Credit Score Categories by {col}"
-        description="Muestra cómo se distribuyen las proporciones de tipos de crédito por deciles."
-        return self.graphic_template(col, title, description)
-    
-
-    def graphic_04(self):
-        col='Outstanding_Debt'
-        title=f"Proportion of Credit Score Categories by {col}"
-        description="Muestra cómo se distribuyen las proporciones de tipos de crédito por deciles."
-        return self.graphic_template(col, title, description)
-    
-
-    def graphic_05(self):
-        col='Outstanding_Debt'
+    def graphic(self,variable):
+        col=variable
         title=f"Proportion of Credit Score Categories by {col}"
         description="Muestra cómo se distribuyen las proporciones de tipos de crédito por deciles."
         return self.graphic_template(col, title, description)
