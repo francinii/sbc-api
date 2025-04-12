@@ -3,6 +3,9 @@ DECLARE
     rule_id INTEGER;
 BEGIN
 
+DELETE FROM conditions;
+DELETE FROM rules;
+
 -- Regla 1
 INSERT INTO rules (message, score_change, effect)
 VALUES ('Se recomienda reducir otras deudas antes de solicitar crédito.', 0, 'warning')
@@ -95,5 +98,11 @@ RETURNING id INTO rule_id;
 INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'ocupacion', '=', 'Riesgo Alto');
 INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'deuda_total', '$gt', '1.0');
 INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'score_credito', '$lt', '0.4');
+
+
+
+------------------------------------ DATA -------------------------------------
+
+
 
 END $$;
