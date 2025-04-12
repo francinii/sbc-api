@@ -23,9 +23,6 @@ class RuleRepository:
         db.refresh(new_rule)
         return new_rule
 
-
-
-class RuleRepository:
     @staticmethod
     def delete_rule_by_id(db: Session, rule_id: int):
         rule = db.query(Rule).filter(Rule.id == rule_id).first()
