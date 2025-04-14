@@ -3,6 +3,8 @@ import os
 from requests import Session
 from services.ml_model_service import MlModelService
 from models.request_models import Applicant
+from models.V2.request_models_v2 import ApplicantV2
+
 from services.inference_motor_service import InferenceMotorServices
 
 class Service():
@@ -23,3 +25,6 @@ class Service():
     
     def call_motor_inference(self, applicant: Applicant):         
         return InferenceMotorServices('/app/data/rules_new.json', self.db).inference_call(applicant)
+    
+    def call_motor_inferencev2(self, applicant: ApplicantV2):         
+        return InferenceMotorServices('/app/data/rules_v2.json', self.db).inference_callV2(applicant)

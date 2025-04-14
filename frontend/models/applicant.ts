@@ -23,9 +23,9 @@ export interface ApplicantV2 {
 	fecha_nacimiento: string;
 	edad: number; // calculado
 	salario_mensual: number; // Salario neto USD, después de los rebajos
-    saldo_deuda_pendiente: number; // total pendiente USD
-    cantidad_tarjetas_credito: number;
-    paga_monto_mínimo: boolean; // (Cómo paga la tarjetas, booleano)
+  saldo_deuda_pendiente: number; // total pendiente USD
+  cantidad_tarjetas_credito: number;
+  paga_monto_mínimo: boolean; // (Cómo paga la tarjetas, booleano)
 	monto_inversion_mensual: number; // USD Cuanto invierte por mes
 	fecha_experiencia_crediticia: string;
 	experiencia_crediticia: number; // (En meses) Calculado de la fecha 
