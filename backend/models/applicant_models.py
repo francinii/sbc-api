@@ -46,3 +46,22 @@ class Applicant_Fact(Fact):
     deuda_total = Field(float, default=0.0)
     cuota_mensual_total = Field(float, default=0.0)
     score_credito=Field(float, default=0.0)
+
+class Applicant_Fact_V2(Fact):
+    cedula = Field(str, mandatory = True)
+    nombre = Field(str, mandatory = True)
+    apellido = Field(str, mandatory = True)
+    tipoDocumento = Field(str, mandatory = True)
+    fecha_nacimiento = Field(str, mandatory = True)
+    edad = Field(int, mandatory = True)
+    salario_mensual = Field(float, mandatory = True) # Salario neto USD, después de los rebajos
+    saldo_deuda_pendiente = Field(float, default=0) # total pendiente USD
+    cantidad_tarjetas_credito = Field(int, default=0)
+    paga_monto_mínimo = Field(bool, default=True) # (Cómo paga la tarjetas, booleano)
+    monto_inversion_mensual = Field(float,  default=0) # USD Cuanto invierte por mes
+    fecha_experiencia_crediticia = Field(str, mandatory = True) # Fecha que inició a usar tarjetas de crédito.
+    experiencia_crediticia = Field(int, default=0) # (En meses) Calculado de la fecha 
+    cantidad_prestamos_activos = Field(int, default=0)
+    delay_from_due_date = Field(int, default=0) # Cantidad de días
+    balance_mensual = Field(int, default=0) # USD
+    score_credito = Field(float, default=0)

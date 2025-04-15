@@ -1,6 +1,10 @@
 
+from requests import Session
+from services.rule_service import RuleService
 from models.response_models import ApplicantResponse
 from models.request_models import Applicant
+from models.V2.request_models_v2 import ApplicantV2
+
 from experta import *
 import collections
 import json
@@ -20,10 +24,13 @@ if not hasattr(collections, 'Mapping'):
     score = Field(int, default=0)
 '''
 class InferenceMotorServices(KnowledgeEngine):
-    def __init__(self, rules_file):
+    def __init__(self, rules_file, db:Session):
         super().__init__()
+        self.db = db
         self.score = 0
-        self.rules = self.load_rules(rules_file)
+        #self.rules = self.load_rules(rules_file)
+        self.rules_service = RuleService(db)
+        self.rules = self.rules_service.format_rules() 
         self.answer_obj= []
 
     def load_rules(self, rules_file):
@@ -58,7 +65,7 @@ class InferenceMotorServices(KnowledgeEngine):
         
         for rule in self.rules:
             if self.evaluate_rule(applicant, rule["condition"]):
-                self.score += rule["score_change"]                
+                #self.score += rule["score_change"]                
                 self.answer_obj.append(ApplicantResponse(
                     regla=str(rule["effect"]),                    
                     descripcion=str(rule["message"]),
@@ -80,6 +87,14 @@ class InferenceMotorServices(KnowledgeEngine):
         self.apply_rules(applicant_fact)
         return self.answer_obj
         #return self.get_final_score()
+
+    def inference_callV2(self, applicant: ApplicantV2) -> list:
+        applicant_fact = applicant.convert_to_fact()
+        print(applicant_fact)
+        self.reset()
+        self.declare(applicant_fact)
+        self.apply_rules(applicant_fact)
+        return self.answer_obj
 
 # Prueba del sistema
 #rules_file = "rules.json" # Archivo JSON con reglas dinámicas

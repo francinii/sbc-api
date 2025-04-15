@@ -1,0 +1,190 @@
+
+[
+    {
+    "condition": { "score_credito": { "$lt": 0.2 } },
+    "score_change": 0,
+    "message": "Debido al puntaje crediticio, se rechaza el crédito por alto riesgo de impago.",
+    "effect": "danger"
+    },
+    {
+    "condition": { "score_credito": { "$gt": 0.2, "$lt": 0.8 } },
+    "score_change": 0,
+    "message": "Debido al puntaje crediticio, no se rechaza el crédito, pero el riesgo de impago es medio.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "score_credito": { "$gt": 0.8 } },
+    "score_change": 0,
+    "message": "Debido al puntaje crediticio, se aprueba el crédito.",
+    "effect": "success"
+    },
+    {
+    "condition": { "edad": { "$gte": 14, "$lte": 19 } },
+    "score_change": 0,
+    "message": "Edad entre 14 y 19 años es de alto riesgo, se recomienda solicitar garantías adicionales.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "edad": { "$gte": 20, "$lte": 43 } },
+    "score_change": 0,
+    "message": "Edad entre 20 y 43 se encuentran en el promedio, se recomienda monitorear otros indicadores.",
+    "effect": "info"
+    },
+    {
+    "condition": { "edad": { "$gte": 44 } },
+    "score_change": 0,
+    "message": "Mayores de 43 suele estar en el mejor promedio, este aspecto sube el puntaje crediticio.",
+    "effect": "success"
+    },
+    {
+    "condition": { "monthly_inhand_salary": { "$lte": 1826 } },
+    "score_change": 0,
+    "message": "Ingresos netos menores a 1800 dólares, se recomienda disminuir el límite de crédito.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "monthly_inhand_salary": { "$gt": 1826, "$lte": 6712.04 } },
+    "score_change": 0,
+    "message": "Ingresos netos entre 1800 y 6700 dólares. Es parte del promedio, se recomienda observar otros indicadores.",
+    "effect": "info"
+    },
+    {
+    "condition": { "monthly_inhand_salary": { "$gt": 6712.04 } },
+    "score_change": 0,
+    "message": "Ingresos altos, apto para mejores tasas de crédito o un crédito más alto.",
+    "effect": "success"
+    },
+    {
+    "condition": { "outstanding_debt": { "$lte": 1355 } },
+    "score_change": 0,
+    "message": "Deuda baja. Se recomienda fomentar créditos.",
+    "effect": "success"
+    },
+    {
+    "condition": { "outstanding_debt": { "$gt": 1355, "$lte": 1624 } },
+    "score_change": 0,
+    "message": "Aumento en deudores estándar. Monitorear antes de definir las condiciones del crédito.",
+    "effect": "info"
+    },
+    {
+    "condition": { "outstanding_debt": { "$gt": 1624, "$lte": 2300 } },
+    "score_change": 0,
+    "message": "La deuda se sitúa entre 1624 y 2300. Se recomienda bajar el límite crediticio.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "outstanding_debt": { "$gt": 2300, "$lte": 3000 } },
+    "score_change": 0,
+    "message": "La deuda se sitúa entre 2300 y 3000. Se recomienda bajar el límite crediticio.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "outstanding_debt": { "$gt": 3000 } },
+    "score_change": 0,
+    "message": "Deuda alta superios a 3000. Se recomienda revisar otros indicadores antes de ofrecer las condiciones del crédito.",
+    "effect": "danger"
+    },
+    {
+    "condition": { "num_credit_cards": { "$lte": 3 } },
+    "score_change": 0,
+    "message": "Pocas tarjetas. El riesgo es bajo.",
+    "effect": "success"
+    },
+    {
+    "condition": { "num_credit_cards": { "$gt": 3, "$lte": 7 } },
+    "score_change": 0,
+    "message": "La cantidad de tarjetas de crédito es moderada. Evaluar cuidadosamente.",
+    "effect": "info"
+    },
+    {
+    "condition": { "num_credit_cards": { "$gt": 7 } },
+    "score_change": 0,
+    "message": "Tiene muchas tarjetas de crédito, el riesgo es considerablemente más alto.",
+    "effect": "danger"
+    },
+    {
+    "condition": { "payment_of_min_amount": { "$eq": true } },
+    "score_change": 0,
+    "message": "Solo paga el mínimo. Mayor riesgo de impago.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "payment_of_min_amount": { "$eq": false } },
+    "score_change": 0,
+    "message": "No paga el mínimo. Tiende a un buen comportamiento de pago.",
+    "effect": "success"
+    },
+    {
+    "condition": { "monto_inversion_mensual": { "$lt": 64 } },
+    "score_change": 0,
+    "message": "Inversión mensual baja o nula. Se recomienda revisar la estrategia de inversión del usuario.",
+    "effect": "info"
+    },
+    {
+    "condition": { "monto_inversion_mensual": { "$gte": 64, "$lt": 130 } },
+    "score_change": 0,
+    "message": "El usuario invierte de 64 a 130 dólares, se puede mejorar la puntuación al aumentar la inversión mensual.",
+    "effect": "info"
+    },
+    {
+    "condition": { "monto_inversion_mensual": { "$gte": 130, "$lt": 275 } },
+    "score_change": 0,
+    "message": "Buen desempeño en inversión, pero se puede mejorar la puntuación al aumentar la inversión mensual.",
+    "effect": "success"
+    },
+    {
+    "condition": { "monto_inversion_mensual": { "$gte": 275 } },
+    "score_change": 0,
+    "message": "Excelente inversión mensual.",
+    "effect": "success"
+    },
+    {
+    "condition": { "experiencia_crediticia": { "$lt": 12 } },
+    "score_change": 0,
+    "message": "Poca experiencia crediticia. Se recomienda monitoreo y limitar el monto de crédito.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "experiencia_crediticia": { "$gte": 12, "$lt": 37 } },
+    "score_change": 0,
+    "message": "Experiencia inicial. Se recomienda monitoreo y limitar el monto de crédito.",
+    "effect": "info"
+    },
+    {
+    "condition": { "experiencia_crediticia": { "$gte": 37, "$lt": 61 } },
+    "score_change": 0,
+    "message": "Experiencia consolidada. Se recomienda ofrecer mejores tasas y condiciones.",
+    "effect": "success"
+    },
+    {
+    "condition": { "experiencia_crediticia": { "$gte": 61 } },
+    "score_change": 0,
+    "message": "Alta experiencia. Se recomienda ofrecer beneficios exclusivos si lo permiten otros indicadores.",
+    "effect": "success"
+    },
+    {
+    "condition": { "cantidad_prestamos_activos": { "$eq": 0 } },
+    "score_change": 0,
+    "message": "Sin préstamos activos. Puede optar por mejores condiciones.",
+    "effect": "success"
+    },
+    {
+    "condition": { "cantidad_prestamos_activos": { "$eq": 1 } },
+    "score_change": 0,
+    "message": "Un préstamo activo. Buen perfil si otros indicadores son positivos se pueden valorar mejores condiciones.",
+    "effect": "info"
+    },
+    {
+    "condition": { "cantidad_prestamos_activos": { "$gte": 2, "$lte": 3 } },
+    "score_change": 0,
+    "message": "Pocos préstamos activos. Evaluar historial antes de ofrecer condiciones.",
+    "effect": "warning"
+    },
+    {
+    "condition": { "cantidad_prestamos_activos": { "$gt": 3 } },
+    "score_change": 0,
+    "message": "Muchos préstamos activos. Es un perfil riesgoso, requiere garantías adicionales.",
+    "effect": "warning"
+    }
+]
+

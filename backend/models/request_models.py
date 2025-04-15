@@ -1,4 +1,5 @@
 from datetime import date
+from typing import List
 from models.applicant_models import Applicant_Fact
 from sqlalchemy import Column, Integer, String, Float, Date, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
@@ -32,7 +33,21 @@ class Applicant(BaseModel):
 
 class MLModelBest(BaseModel):
     Age: int # check
-    #Credit_Score: str
+
     Monthly_Inhand_Salary: float # check
     Delay_from_due_date: int #check
     Monthly_Balance: float
+
+class Graphic(BaseModel):
+    id: int
+    labelx: List[float]
+    labely: List[float]
+    data: List[float]
+    title: str
+    description: str
+
+class Rule(BaseModel):
+    id: int
+    name: str
+    description: str
+    rule: str
