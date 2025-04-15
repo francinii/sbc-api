@@ -24,11 +24,10 @@ if not hasattr(collections, 'Mapping'):
     score = Field(int, default=0)
 '''
 class InferenceMotorServices(KnowledgeEngine):
-    def __init__(self, rules_file, db:Session):
+    def __init__(self, db:Session):
         super().__init__()
         self.db = db
         self.score = 0
-        #self.rules = self.load_rules(rules_file)
         self.rules_service = RuleService(db)
         self.rules = self.rules_service.format_rules() 
         self.answer_obj= []
@@ -37,32 +36,42 @@ class InferenceMotorServices(KnowledgeEngine):
         with open(rules_file, 'r') as f:
             return json.load(f)
     
-    def evaluate_rule(self, applicant: Applicant, condition):
+    def evaluate_rule(self, applicant: Applicant, condition: dict):
         operators = {
             "$lt": lambda a, b: a < b,
             "$gt": lambda a, b: a > b,
             "$lte": lambda a, b: a <= b,
             "$gte": lambda a, b: a >= b,
             "$eq": lambda a, b: a == b
-        }
-        for field, constraints in condition.items(): 
-            applicant_dict = applicant.as_dict()
-            applicant_value = applicant_dict.get(field, None)
-            # Verifica si el campo existe en el solicitante
+        }        
+        applicant_dict = applicant.as_dict()
+        for field, constraints in condition.items():
+            print(f"Evaluando campo: {field}")            
+            applicant_value = applicant_dict.get(field)
             if applicant_value is None:
                 print(f"Advertencia: {field} no encontrado en Cliente. Ignorando condición.")
-                return False  # Si falta un campo requerido, la regla no se aplica
-            
-            if isinstance(constraints, str):
-                return applicant_value == constraints
-            else:
+                return False  # Campo no encontrado            
+            # Si la condición es directa (e.g., "$eq": "true")
+            if isinstance(constraints, dict):
                 for op, value in constraints.items():
-                    if op in operators and not operators[op](applicant_value, value):
+                    if op not in operators:
+                        print(f"Operador {op} desconocido.")
+                        return False  # operador inválido                    
+                    # Manejar conversión de string 'true'/'false' a boolean si necesario
+                    if isinstance(applicant_value, bool):
+                        if isinstance(value, str):
+                            value = value.lower() == 'true'
+
+                    if not operators[op](applicant_value, value):
+                        print(f"Falla condición: {applicant_value} {op} {value}")
                         return False
+            else:
+                if applicant_value != constraints:
+                    return False
         return True
 
-    def apply_rules(self, applicant: Cliente):
-        
+
+    def apply_rules(self, applicant: Cliente):        
         for rule in self.rules:
             if self.evaluate_rule(applicant, rule["condition"]):
                 #self.score += rule["score_change"]                
@@ -74,20 +83,17 @@ class InferenceMotorServices(KnowledgeEngine):
                 print(f"{rule['message']} {'+' if rule['score_change'] > 0 else ''}{rule['score_change']} puntos")
     
     def get_final_score(self):
-        print(f"Puntaje final del solicitante: {self.score}")
-        
+        print(f"Puntaje final del solicitante: {self.score}")        
         return self.score
 
     def inference_call(self, applicant: Applicant) -> list:
-        #rules_file = "rules.json"
-        #print(applicant)
         applicant_fact = applicant.convert_to_fact()
         self.reset()
         self.declare(applicant_fact)
         self.apply_rules(applicant_fact)
         return self.answer_obj
-        #return self.get_final_score()
 
+    '''
     def inference_callV2(self, applicant: ApplicantV2) -> list:
         applicant_fact = applicant.convert_to_fact()
         print(applicant_fact)
@@ -95,15 +101,8 @@ class InferenceMotorServices(KnowledgeEngine):
         self.declare(applicant_fact)
         self.apply_rules(applicant_fact)
         return self.answer_obj
+    '''
 
-# Prueba del sistema
-#rules_file = "rules.json" # Archivo JSON con reglas dinámicas
-#engine = InferenceMotorServices(rules_file)
-#engine.reset()
-#applicant = Applicant(credit_history=750, income=3500.00, debt_to_income=0.2, job_stability=5)
-#engine.declare(applicant)
-#engine.apply_rules(applicant)
-#engine.get_final_score()
 
 
 

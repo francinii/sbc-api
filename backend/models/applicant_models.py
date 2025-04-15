@@ -41,11 +41,19 @@ class Applicant_Fact(Fact):
     apellido = Field(str, mandatory=True)
     ocupacion = Field(str, mandatory=True)
     meses_trabajando = Field(int, default=0)
-    salario_mensual = Field(float, default=0)
+    salario_mensual = Field(float, default=0.0)
     edad = Field(int, default=0)
     deuda_total = Field(float, default=0.0)
     cuota_mensual_total = Field(float, default=0.0)
-    score_credito=Field(float, default=0.0)
+    score_credito = Field(float, default=0.0)
+    monthly_inhand_salary = Field(float, default=0.0)
+    outstanding_debt = Field(float, default=0.0)
+    num_credit_cards = Field(int, default=0)
+    payment_of_min_amount = Field(str, default=False)
+    monto_inversion_mensual = Field(float, default=0.0)
+    experiencia_crediticia = Field(int, default=0)
+    cantidad_prestamos_activos = Field(int, default=0)
+
 
 class Applicant_Fact_V2(Fact):
     cedula = Field(str, mandatory = True)
