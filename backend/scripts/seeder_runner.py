@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 
 def run_rule_seeder():
-    print("Iniciando la inicialización de la tabla Rules...")
+    print("Inicializando tabla Rules...")
 
     DATABASE_URL = os.environ.get("DATABASE_URL")
     if not DATABASE_URL:

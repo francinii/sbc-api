@@ -26,7 +26,7 @@ Modelo
 ```sh
 git clone https://github.com/adoljc87/SCORE.git
 ```
-Nos dirijimos a la carpta del proyecto
+Nos dirigimos a la carpta del proyecto
 
 ```sh
 cd sbc-api
