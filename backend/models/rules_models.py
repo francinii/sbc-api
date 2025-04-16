@@ -34,7 +34,7 @@ class ConditionResponse(BaseModel):
     value: Union[str, float]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class RuleResponse(BaseModel):
     id: int
@@ -44,7 +44,7 @@ class RuleResponse(BaseModel):
     conditions: List[ConditionResponse]  # ← clave
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class ConditionCreate(BaseModel):
     field: str

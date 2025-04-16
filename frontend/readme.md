@@ -1,11 +1,11 @@
 ## Instalación del backend
-Note: es requerido tener node instalado. Para descargarlo: https://nodejs.org/en
+Note: es requerido tener nodejs instalado. Para descargarlo: https://nodejs.org/en
 
 ## Versiones
 npm 10.9.2
 node v22.14.0
 
-## framework (npx shadcn@latest init)
+## Framework (npx shadcn@latest init)
 Next.js 
 
 ## correr el proyecto individualmente

@@ -1,4 +1,4 @@
-version: '0.5'
+#version: '0.5'
 
 services:
   sbc_frontend:
@@ -40,7 +40,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "user"]
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U user -d creditScoreDB'"]
       interval: 5s
       retries: 5
 
