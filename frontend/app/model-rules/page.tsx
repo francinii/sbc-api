@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -13,7 +13,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table"
-import { ArrowUpDown, ChevronDown, Landmark, MoreHorizontal } from "lucide-react"
+import { ArrowUpDown, ChevronDown, Landmark, Trash2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -32,130 +32,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { Card } from "@/components/ui/card";
-
-const data = [
-  {
-    condition: {
-      cuota_mensual_total: { "$gt": 0.2 },
-      score_credito: { "$gte": 0.4, "$lte": 0.6 }
-    },
-    score_change: 0,
-    effect: "warning",
-    message: "Se recomienda reducir otras deudas antes de solicitar crédito."
-  },
-  {
-    condition: {
-      deuda_total: { "$lt": 0.5 },
-      cuota_mensual_total: { "$lt": 0.1 }
-    },
-    score_change: 0,
-    effect: "good",
-    message: "Acceso a mejores tasas de interés."
-  },
-  {
-    condition: {
-      ocupacion: "Riesgo Alto",
-      meses_trabajando: { "$gte": 24 }
-    },
-    score_change: 0,
-    effect: "neutral",
-    message: "Evaluar caso detalladamente antes de tomar una decisión."
-  },
-  {
-    condition: {
-      cuota_mensual_total: { "$gt": 0.3 }
-    },
-    score_change: 0,
-    effect: "bad",
-    message: "Rechazo del crédito debido a alta cuota mensual."
-  },
-  {
-    condition: {
-      meses_trabajando: { "$lt": 6 },
-      score_credito: { "$lt": 0.4 }
-    },
-    score_change: 0,
-    effect: "bad",
-    message: "Rechazo automático por historial crediticio bajo y poca estabilidad laboral."
-  },
-  {
-    condition: {
-      ocupacion: "Riesgo Alto",
-      meses_trabajando: { "$lt": 6 }
-    },
-    score_change: 0,
-    effect: "warning",
-    message: "Requiere mayor evaluación financiera antes de rechazar."
-  },
-  {
-    condition: {
-      meses_trabajando: { "$gte": 6, "$lt": 24 },
-      ocupacion: "Riesgo Medio",
-      score_credito: { "$gte": 0.4, "$lte": 0.6 }
-    },
-    score_change: 0,
-    effect: "neutral",
-    message: "Revisión adicional necesaria antes de aprobar crédito."
-  },
-  {
-    condition: {
-      score_credito: { "$gt": 0.7 },
-      deuda_total: { "$lt": 0.5 },
-      cuota_mensual_total: { "$lt": 0.2 }
-    },
-    score_change: 0,
-    effect: "good",
-    message: "Aprobación con condiciones favorables."
-  },
-  {
-    condition: {
-      score_credito: { "$lt": 0.4 },
-      cuota_mensual_total: { "$lt": 0.1 },
-      meses_trabajando: { "$gte": 24 }
-    },
-    score_change: 0,
-    effect: "neutral",
-    message: "Evaluar alternativas de crédito con garantías adicionales."
-  },
-  {
-    condition: {
-      ocupacion: "Riesgo Bajo",
-      meses_trabajando: { "$gte": 24 },
-      score_credito: { "$gt": 0.7 }
-    },
-    score_change: 0,
-    effect: "good",
-    message: "Aprobación automática del crédito."
-  },
-  {
-    condition: {
-      ocupacion: "Riesgo Medio",
-      score_credito: { "$gte": 0.4, "$lte": 0.6 },
-      deuda_total: { "$gt": 0.5 }
-    },
-    score_change: 0,
-    effect: "warning",
-    message: "Establecer límite de crédito reducido."
-  },
-  {
-    condition: {
-      ocupacion: "Riesgo Alto",
-      deuda_total: { "$gt": 1.0 },
-      score_credito: { "$lt": 0.4 }
-    },
-    score_change: 0,
-    effect: "bad",
-    message: "Rechazo del crédito por alta deuda y bajo score."
-  }
-];
-
-export type Rule = {
-    condition: {};
-    score_change: 0;
-    message: string;
-    effect: string;
-}
+import { Card } from "@/components/ui/card"
+import { getRules, deleteRule } from "@/lib/api"
+import { Rule } from "@/models/Rule"
+import AddRuleDialog from "@/components/AddRuleDialog"
 
 export const columns: ColumnDef<Rule>[] = [
   {
@@ -180,227 +60,182 @@ export const columns: ColumnDef<Rule>[] = [
     enableSorting: false,
     enableHiding: false,
   },
-  
   {
-    accessorKey: "condition",
-    header: ({ column }) => (
-      <Button
-        variant="ghost"
-        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-      >
-        Condition
-        <ArrowUpDown />
-      </Button>
-    ),
+    accessorKey: "conditions",
+    header: () => "Conditions",
     cell: ({ row }) => {
-      const condition = row.getValue("condition");
-  
-      // Verificar que la condición es un objeto
-      if (!condition || typeof condition !== "object") {
-        return <div className="text-gray-500 italic">No conditions</div>;
-      }
-  
-      // Formatear las condiciones en texto legible
-      const formatCondition = (conditionObj: Record<string, any>) => {
-        return Object.entries(conditionObj)
-          .map(([key, value]) => {
-            if (typeof value === "object" && value !== null) {
-              return Object.entries(value)
-                .map(([operator, operand]) => {
-                  let operatorText = "";
-                  switch (operator) {
-                    case "$gt":
-                      operatorText = "greater than";
-                      break;
-                    case "$lt":
-                      operatorText = "less than";
-                      break;
-                    case "$gte":
-                      operatorText = "greater than or equal to";
-                      break;
-                    case "$lte":
-                      operatorText = "less than or equal to";
-                      break;
-                    default:
-                      operatorText = operator;
-                  }
-                  return `${key} ${operatorText} ${operand}`;
-                })
-                .join(" and ");
-            }
-            return `${key} equals ${value}`;
-          })
-          .join(" and ");
+      const conditions = row.original.conditions;
+
+      const translateOperator = (op: string): string => {
+        switch (op) {
+          case "$eq": return "igual a";
+          case "$gt": return "mayor que";
+          case "$lt": return "menor que";
+          case "$gte": return "mayor o igual que";
+          case "$lte": return "menor o igual que";
+          default: return op;
+        }
       };
-  
+
       return (
-        <div className="whitespace-normal break-words p-2 max-w-xs sm:max-w-md">
-          {formatCondition(condition)}
-        </div>
+        <ul className="text-sm space-y-1">
+          {conditions.map((c, i) => (
+            <li key={i}>
+              <span className="font-semibold">{c.field}</span> {translateOperator(c.operator)} {c.value}
+            </li>
+          ))}
+        </ul>
       );
     },
   },
-  
-
   {
     accessorKey: "score_change",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Score Change
-          <ArrowUpDown />
-        </Button>
-      )
-    },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("score_change")}</div>,
+    header: "Score Change",
+    cell: ({ row }) => row.getValue("score_change"),
   },
   {
     accessorKey: "message",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Message
-          <ArrowUpDown />
-        </Button>
-      )
-    },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("message")}</div>,
+    header: "Message",
+    cell: ({ row }) => row.getValue("message"),
   },
   {
     accessorKey: "effect",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Effect
-          <ArrowUpDown />
-        </Button>
-      )
-    },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("effect")}</div>,
-  }
+    header: "Effect",
+    cell: ({ row }) => row.getValue("effect"),
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => (
+      <Button
+        variant="ghost"
+        size="icon"
+        onClick={() => handleDeleteRule(row.original.id)}
+      >
+        <Trash2 className="h-4 w-4 text-red-500" />
+      </Button>
+    )
+  },
 ]
 
+let handleDeleteRule = async (id: number) => {};
+
 export default function ModelRules() {
+  const [rulesData, setRulesData] = useState<Rule[]>([]);
+  const [sorting, setSorting] = useState<SortingState>([]);
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
+  const [rowSelection, setRowSelection] = useState({});
 
-    const [sorting, setSorting] = React.useState<SortingState>([])
-    const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
-    const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({})
-    const [rowSelection, setRowSelection] = React.useState({})
+  useEffect(() => {
+    fetchRules();
+  }, []);
 
-    const table = useReactTable({
-        data,
-        columns,
-        onSortingChange: setSorting,
-        onColumnFiltersChange: setColumnFilters,
-        getCoreRowModel: getCoreRowModel(),
-        getPaginationRowModel: getPaginationRowModel(),
-        getSortedRowModel: getSortedRowModel(),
-        getFilteredRowModel: getFilteredRowModel(),
-        onColumnVisibilityChange: setColumnVisibility,
-        onRowSelectionChange: setRowSelection,
-        state: {
-            sorting,
-            columnFilters,
-            columnVisibility,
-            rowSelection,
-        }
-    })
-    
-    return (
-        <div className="flex flex-col items-center w-full p-4">
-            <Card className="w-full p-6 shadow-lg bg-white mb-6">
-                <div className="flex justify-between items-center">
-                    <h2 className="text-xl font-semibold text-center flex-grow">
-                        <Landmark className="inline-block mb-1" /> Reglas del modelo
-                    </h2>
-                </div>
-                <div className="flex items-center py-1">
-                    <Input
-                        placeholder="Filtrar por effect..." 
-                        value={(table.getColumn("effect")?.getFilterValue() as string) ?? ""}
-                        onChange={(event) =>
-                            table.getColumn("effect")?.setFilterValue(event.target.value)
-                        }
-                        className="max-w-sm"
-                    />
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                            <Button variant="outline" className="ml-auto"> Columns <ChevronDown /></Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="end">
-                            {table
-                            .getAllColumns()
-                            .filter((column) => column.getCanHide())
-                            .map((column) => {
-                                return (
-                                <DropdownMenuCheckboxItem
-                                    key={column.id}
-                                    className="capitalize"
-                                    checked={column.getIsVisible()}
-                                    onCheckedChange={(value) =>
-                                    column.toggleVisibility(!!value)
-                                    }
-                                >
-                                    {column.id}
-                                </DropdownMenuCheckboxItem>
-                                )
-                            })}
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-                </div>
-                <div className="rounded-md border">
-                    <Table>
-                        <TableHeader>
-                            {table.getHeaderGroups().map((headerGroup) => (
-                                <TableRow key={headerGroup.id}>
-                                {headerGroup.headers.map((header) => {
-                                    return (
-                                        <TableHead key={header.id}>
-                                            {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
-                                        </TableHead>
-                                    )
-                                })}
-                                </TableRow>
-                            ))}
-                        </TableHeader>
-                        <TableBody>
-                            {table.getRowModel().rows?.length ? 
-                                (table.getRowModel().rows.map((row) => (
-                                    <TableRow key={row.id} data-state={row.getIsSelected() && "selected"}>
-                                        {row.getVisibleCells().map((cell) => (
-                                            <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
-                                        ))}
-                                    </TableRow>
-                                ))) : 
-                                (
-                                    <TableRow>
-                                        <TableCell colSpan={columns.length} className="h-24 text-center">No results.</TableCell>
-                                    </TableRow>
-                                )
-                            }
-                        </TableBody>
-                    </Table>
-                </div>
-                <div className="flex items-center justify-end space-x-2 py-4">
-                    <div className="flex-1 text-sm text-muted-foreground">
-                        {table.getFilteredSelectedRowModel().rows.length} of{" "}
-                        {table.getFilteredRowModel().rows.length} row(s) selected.
-                    </div>
-                    <div className="space-x-2">
-                        <Button variant="outline" size="sm" onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()}>Previous</Button>
-                        <Button variant="outline" size="sm" onClick={() => table.nextPage()} disabled={!table.getCanNextPage()}>Next</Button>
-                    </div>
-                </div>
-            </Card>
+  const fetchRules = async () => {
+    const response = await getRules();
+    if (response && Array.isArray(response.rules)) {
+      setRulesData(response.rules);
+    }
+  };
+
+  handleDeleteRule = async (id: number) => {
+    await deleteRule(id);
+    fetchRules();
+  };
+
+  const table = useReactTable({
+    data: rulesData,
+    columns,
+    onSortingChange: setSorting,
+    onColumnFiltersChange: setColumnFilters,
+    getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    onColumnVisibilityChange: setColumnVisibility,
+    onRowSelectionChange: setRowSelection,
+    state: {
+      sorting,
+      columnFilters,
+      columnVisibility,
+      rowSelection,
+    },
+  });
+
+  return (
+    <div className="flex flex-col items-center w-full p-4">
+      <Card className="w-full p-6 shadow-lg bg-white mb-6">
+        <div className="flex justify-between items-center">
+          <h2 className="text-xl font-semibold text-center flex-grow">
+            <Landmark className="inline-block mb-1" /> Reglas del modelo
+          </h2>
+          <AddRuleDialog onRuleAdded={fetchRules} />
         </div>
-    )
+        <div className="flex items-center py-1">
+          <Input
+            placeholder="Filtrar por effect..."
+            value={(table.getColumn("effect")?.getFilterValue() as string) ?? ""}
+            onChange={(event) => table.getColumn("effect")?.setFilterValue(event.target.value)}
+            className="max-w-sm"
+          />
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="ml-auto"> Columns <ChevronDown /></Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              {table.getAllColumns().filter((column) => column.getCanHide()).map((column) => (
+                <DropdownMenuCheckboxItem
+                  key={column.id}
+                  className="capitalize"
+                  checked={column.getIsVisible()}
+                  onCheckedChange={(value) => column.toggleVisibility(!!value)}
+                >
+                  {column.id}
+                </DropdownMenuCheckboxItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <div className="rounded-md border">
+          <Table>
+            <TableHeader>
+              {table.getHeaderGroups().map((headerGroup) => (
+                <TableRow key={headerGroup.id}>
+                  {headerGroup.headers.map((header) => (
+                    <TableHead key={header.id}>
+                      {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+                    </TableHead>
+                  ))}
+                </TableRow>
+              ))}
+            </TableHeader>
+            <TableBody>
+              {table.getRowModel().rows?.length ? (
+                table.getRowModel().rows.map((row) => (
+                  <TableRow key={row.id} data-state={row.getIsSelected() && "selected"}>
+                    {row.getVisibleCells().map((cell) => (
+                      <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                    ))}
+                  </TableRow>
+                ))
+              ) : (
+                <TableRow>
+                  <TableCell colSpan={columns.length} className="h-24 text-center">No results.</TableCell>
+                </TableRow>
+              )}
+            </TableBody>
+          </Table>
+        </div>
+        <div className="flex items-center justify-end space-x-2 py-4">
+          <div className="flex-1 text-sm text-muted-foreground">
+            {table.getFilteredSelectedRowModel().rows.length} of {table.getFilteredRowModel().rows.length} row(s) selected.
+          </div>
+          <div className="space-x-2">
+            <Button variant="outline" size="sm" onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()}>Previous</Button>
+            <Button variant="outline" size="sm" onClick={() => table.nextPage()} disabled={!table.getCanNextPage()}>Next</Button>
+          </div>
+        </div>
+      </Card>
+    </div>
+  );
 }

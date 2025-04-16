@@ -14,6 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 import { submitApplicantData } from "@/lib/api";
 import { Applicant } from "@/models/applicant";
@@ -24,13 +25,13 @@ import OcupacionField from "@/components/form-fields/OcupacionField";
 
 interface ScoreFormProps {
   form: UseFormReturn<z.infer<typeof ScoreFormSchema>>;
-  onCalculate: (sbc_model: any, score_crediticio: any) => void;
+  onCalculate: (sbc_model: any, score_crediticio: any, graphics?: any) => void;
 }
 
 export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
 
   const calcularEdad = (fechaNacimiento: string): number => {
-    const fecha = new Date(fechaNacimiento.split("-").reverse().join("-")); // Convierte de "dd-MM-yyyy" a "yyyy-MM-dd"
+    const fecha = new Date(fechaNacimiento.split("-").reverse().join("-"));
     const hoy = new Date();
     let edad = hoy.getFullYear() - fecha.getFullYear();
     const mes = hoy.getMonth() - fecha.getMonth();
@@ -39,7 +40,7 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
     }
     return edad;
   };
-  
+
   async function onSubmit(values: z.infer<typeof ScoreFormSchema>) {
     try {
       const applicant: Applicant = {
@@ -49,9 +50,12 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
         edad: calcularEdad(format(values.fecha_nacimiento, "dd-MM-yyyy")),
         score_credito: 0
       };
-  
+
       const result = await submitApplicantData(applicant);
-      onCalculate(result.sbc_model, result.score_crediticio);
+
+      const validGraphics = result.graphics || [];
+
+      onCalculate(result.sbc_model, result.score_crediticio, validGraphics);
     } catch (error) {
       console.error("Error al procesar la solicitud:", error);
     }
@@ -103,6 +107,16 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
           </FormItem>
         )} />
 
+        <FormField control={form.control} name="monthly_inhand_salary" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Salario neto mensual</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Salario después de deducciones" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
         <FormField control={form.control} name="deuda_total" render={({ field }) => (
           <FormItem>
             <FormLabel>Deuda total</FormLabel>
@@ -113,11 +127,79 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
           </FormItem>
         )} />
 
+        <FormField control={form.control} name="outstanding_debt" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Deuda pendiente</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Monto pendiente por pagar" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
         <FormField control={form.control} name="cuota_mensual_total" render={({ field }) => (
           <FormItem>
             <FormLabel>Cuota mensual total</FormLabel>
             <FormControl>
               <Input type="number" placeholder="Ingrese su cuota mensual total" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
+        <FormField control={form.control} name="num_credit_cards" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Tarjetas de crédito</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Número de tarjetas" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
+        <FormField control={form.control} name="payment_of_min_amount" render={({ field }) => (
+          <FormItem>
+            <FormLabel>¿Paga el mínimo?</FormLabel>
+            <Select onValueChange={field.onChange} defaultValue={field.value}>
+              <FormControl>
+                <SelectTrigger>
+                  <SelectValue placeholder="Seleccione una opción" />
+                </SelectTrigger>
+              </FormControl>
+              <SelectContent>
+                <SelectItem value="Yes">Sí</SelectItem>
+                <SelectItem value="No">No</SelectItem>
+              </SelectContent>
+            </Select>
+            <FormMessage />
+          </FormItem>
+        )} />
+
+        <FormField control={form.control} name="monto_inversion_mensual" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Inversión mensual</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Monto invertido" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
+        <FormField control={form.control} name="experiencia_crediticia" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Experiencia crediticia (meses)</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Meses de historial" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )} />
+
+        <FormField control={form.control} name="cantidad_prestamos_activos" render={({ field }) => (
+          <FormItem>
+            <FormLabel>Préstamos activos</FormLabel>
+            <FormControl>
+              <Input type="number" placeholder="Cantidad de préstamos" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -137,7 +219,7 @@ export default function ScoreForm({ form, onCalculate }: ScoreFormProps) {
           <FormItem>
             <FormLabel>Retraso de la fecha de vencimiento</FormLabel>
             <FormControl>
-              <Input type="number" placeholder="Ingrese el retraso de la fecha de vencimiento" {...field} />
+              <Input type="number" placeholder="Ingrese el retraso" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>

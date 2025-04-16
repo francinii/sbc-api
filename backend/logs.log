@@ -5238,3 +5238,1381 @@ pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2025-04-06 16:28:44,123:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 00:01:30,722:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 00:01:30,722:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 00:01:30,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 00:01:30,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 00:01:31,736:WARNING:/usr/local/lib/python3.9/site-packages/pydantic/_internal/_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+
+2025-04-16 01:24:39,908:INFO:Initializing load_model()
+2025-04-16 01:24:39,910:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:24:44,440:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:24:44,586:INFO:Initializing predict_model()
+2025-04-16 01:24:44,586:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a5390700>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482af0>)
+2025-04-16 01:24:44,586:INFO:Checking exceptions
+2025-04-16 01:24:44,586:INFO:Preloading libraries
+2025-04-16 01:24:44,587:INFO:Set up data.
+2025-04-16 01:24:44,599:INFO:Set up index.
+2025-04-16 01:24:45,456:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:26:28,816:INFO:Initializing load_model()
+2025-04-16 01:26:28,817:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:26:30,851:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:26:30,883:INFO:Initializing predict_model()
+2025-04-16 01:26:30,883:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a541ed30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482af0>)
+2025-04-16 01:26:30,883:INFO:Checking exceptions
+2025-04-16 01:26:30,884:INFO:Preloading libraries
+2025-04-16 01:26:30,884:INFO:Set up data.
+2025-04-16 01:26:30,887:INFO:Set up index.
+2025-04-16 01:26:31,089:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:26:41,018:INFO:Initializing load_model()
+2025-04-16 01:26:41,019:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:26:42,964:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:26:43,000:INFO:Initializing predict_model()
+2025-04-16 01:26:43,000:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a5431910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482af0>)
+2025-04-16 01:26:43,001:INFO:Checking exceptions
+2025-04-16 01:26:43,001:INFO:Preloading libraries
+2025-04-16 01:26:43,001:INFO:Set up data.
+2025-04-16 01:26:43,004:INFO:Set up index.
+2025-04-16 01:26:43,181:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:26:48,214:INFO:Initializing load_model()
+2025-04-16 01:26:48,215:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:26:50,020:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:26:50,047:INFO:Initializing predict_model()
+2025-04-16 01:26:50,048:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a53fc370>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482c10>)
+2025-04-16 01:26:50,048:INFO:Checking exceptions
+2025-04-16 01:26:50,048:INFO:Preloading libraries
+2025-04-16 01:26:50,049:INFO:Set up data.
+2025-04-16 01:26:50,051:INFO:Set up index.
+2025-04-16 01:26:50,222:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:27:07,073:INFO:Initializing load_model()
+2025-04-16 01:27:07,073:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:27:09,031:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:27:09,061:INFO:Initializing predict_model()
+2025-04-16 01:27:09,061:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a53fcd60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482700>)
+2025-04-16 01:27:09,062:INFO:Checking exceptions
+2025-04-16 01:27:09,062:INFO:Preloading libraries
+2025-04-16 01:27:09,062:INFO:Set up data.
+2025-04-16 01:27:09,065:INFO:Set up index.
+2025-04-16 01:27:09,254:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:27:18,824:INFO:Initializing load_model()
+2025-04-16 01:27:18,824:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:27:20,838:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:27:20,867:INFO:Initializing predict_model()
+2025-04-16 01:27:20,867:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a54a7940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482c10>)
+2025-04-16 01:27:20,867:INFO:Checking exceptions
+2025-04-16 01:27:20,867:INFO:Preloading libraries
+2025-04-16 01:27:20,868:INFO:Set up data.
+2025-04-16 01:27:20,870:INFO:Set up index.
+2025-04-16 01:27:21,054:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:27:27,727:INFO:Initializing load_model()
+2025-04-16 01:27:27,727:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:27:29,673:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:27:29,701:INFO:Initializing predict_model()
+2025-04-16 01:27:29,701:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a3250ca0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482dc0>)
+2025-04-16 01:27:29,701:INFO:Checking exceptions
+2025-04-16 01:27:29,702:INFO:Preloading libraries
+2025-04-16 01:27:29,702:INFO:Set up data.
+2025-04-16 01:27:29,704:INFO:Set up index.
+2025-04-16 01:27:29,872:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:27:49,494:INFO:Initializing load_model()
+2025-04-16 01:27:49,494:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 01:27:51,364:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 01:27:51,392:INFO:Initializing predict_model()
+2025-04-16 01:27:51,392:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f80a53908e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f80a5482b80>)
+2025-04-16 01:27:51,392:INFO:Checking exceptions
+2025-04-16 01:27:51,392:INFO:Preloading libraries
+2025-04-16 01:27:51,393:INFO:Set up data.
+2025-04-16 01:27:51,395:INFO:Set up index.
+2025-04-16 01:27:51,586:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 01:32:11,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 01:32:11,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 01:32:11,063:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 01:32:11,063:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 01:32:12,153:WARNING:/usr/local/lib/python3.9/site-packages/pydantic/_internal/_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+
+2025-04-16 02:02:59,071:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 02:02:59,071:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 02:02:59,071:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 02:02:59,072:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 02:03:00,063:WARNING:/usr/local/lib/python3.9/site-packages/pydantic/_internal/_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+
+2025-04-16 02:06:51,027:INFO:Initializing load_model()
+2025-04-16 02:06:51,027:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:06:58,147:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:06:58,238:INFO:Initializing predict_model()
+2025-04-16 02:06:58,239:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0bd7b32910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0bd5962f70>)
+2025-04-16 02:06:58,239:INFO:Checking exceptions
+2025-04-16 02:06:58,239:INFO:Preloading libraries
+2025-04-16 02:06:58,240:INFO:Set up data.
+2025-04-16 02:06:58,250:INFO:Set up index.
+2025-04-16 02:06:58,733:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 02:09:36,303:INFO:Initializing load_model()
+2025-04-16 02:09:36,303:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:09:38,766:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:09:38,797:INFO:Initializing predict_model()
+2025-04-16 02:09:38,797:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0be977f700>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0bd7ac0280>)
+2025-04-16 02:09:38,798:INFO:Checking exceptions
+2025-04-16 02:09:38,798:INFO:Preloading libraries
+2025-04-16 02:09:38,798:INFO:Set up data.
+2025-04-16 02:09:38,801:INFO:Set up index.
+2025-04-16 02:09:38,997:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 02:22:39,457:INFO:Initializing load_model()
+2025-04-16 02:22:39,459:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:22:42,767:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:22:42,822:INFO:Initializing predict_model()
+2025-04-16 02:22:42,822:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0bd7b186d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0be97ef280>)
+2025-04-16 02:22:42,822:INFO:Checking exceptions
+2025-04-16 02:22:42,822:INFO:Preloading libraries
+2025-04-16 02:22:42,823:INFO:Set up data.
+2025-04-16 02:22:42,827:INFO:Set up index.
+2025-04-16 02:22:43,246:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 02:24:21,192:INFO:Initializing load_model()
+2025-04-16 02:24:21,192:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:24:23,102:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:24:23,133:INFO:Initializing predict_model()
+2025-04-16 02:24:23,134:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0bb98ba940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0be97ef0d0>)
+2025-04-16 02:24:23,134:INFO:Checking exceptions
+2025-04-16 02:24:23,134:INFO:Preloading libraries
+2025-04-16 02:24:23,135:INFO:Set up data.
+2025-04-16 02:24:23,137:INFO:Set up index.
+2025-04-16 02:24:23,384:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 02:25:01,370:INFO:Initializing load_model()
+2025-04-16 02:25:01,370:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:25:03,452:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:25:03,479:INFO:Initializing predict_model()
+2025-04-16 02:25:03,479:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0be96a64f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0be97ef940>)
+2025-04-16 02:25:03,480:INFO:Checking exceptions
+2025-04-16 02:25:03,480:INFO:Preloading libraries
+2025-04-16 02:25:03,480:INFO:Set up data.
+2025-04-16 02:25:03,483:INFO:Set up index.
+2025-04-16 02:25:03,675:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 02:43:58,857:INFO:Initializing load_model()
+2025-04-16 02:43:58,857:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 02:44:01,011:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 02:44:01,050:INFO:Initializing predict_model()
+2025-04-16 02:44:01,051:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f0be96a6100>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f0bd7ac0ee0>)
+2025-04-16 02:44:01,051:INFO:Checking exceptions
+2025-04-16 02:44:01,051:INFO:Preloading libraries
+2025-04-16 02:44:01,052:INFO:Set up data.
+2025-04-16 02:44:01,055:INFO:Set up index.
+2025-04-16 02:44:01,313:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 03:00:24,163:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 03:00:24,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 03:00:24,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 03:00:24,164:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-16 03:00:25,346:WARNING:/usr/local/lib/python3.9/site-packages/pydantic/_internal/_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+
+2025-04-16 03:00:54,244:INFO:Initializing load_model()
+2025-04-16 03:00:54,244:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 03:00:58,796:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 03:00:58,847:INFO:Initializing predict_model()
+2025-04-16 03:00:58,847:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ecb2a30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90cae3f70>)
+2025-04-16 03:00:58,847:INFO:Checking exceptions
+2025-04-16 03:00:58,848:INFO:Preloading libraries
+2025-04-16 03:00:58,848:INFO:Set up data.
+2025-04-16 03:00:58,852:INFO:Set up index.
+2025-04-16 03:00:59,074:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 03:02:01,998:INFO:Initializing load_model()
+2025-04-16 03:02:01,999:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 03:02:05,834:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 03:02:05,864:INFO:Initializing predict_model()
+2025-04-16 03:02:05,865:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec27040>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90cae3f70>)
+2025-04-16 03:02:05,865:INFO:Checking exceptions
+2025-04-16 03:02:05,865:INFO:Preloading libraries
+2025-04-16 03:02:05,865:INFO:Set up data.
+2025-04-16 03:02:05,868:INFO:Set up index.
+2025-04-16 03:02:06,062:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 03:03:31,401:INFO:Initializing load_model()
+2025-04-16 03:03:31,401:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 03:03:33,437:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 03:03:33,464:INFO:Initializing predict_model()
+2025-04-16 03:03:33,464:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90caa8fd0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90ca4e430>)
+2025-04-16 03:03:33,464:INFO:Checking exceptions
+2025-04-16 03:03:33,464:INFO:Preloading libraries
+2025-04-16 03:03:33,465:INFO:Set up data.
+2025-04-16 03:03:33,467:INFO:Set up index.
+2025-04-16 03:03:33,647:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 03:05:40,340:INFO:Initializing load_model()
+2025-04-16 03:05:40,341:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 03:05:42,203:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 03:05:42,232:INFO:Initializing predict_model()
+2025-04-16 03:05:42,232:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff9023c3730>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209c11f0>)
+2025-04-16 03:05:42,233:INFO:Checking exceptions
+2025-04-16 03:05:42,233:INFO:Preloading libraries
+2025-04-16 03:05:42,234:INFO:Set up data.
+2025-04-16 03:05:42,236:INFO:Set up index.
+2025-04-16 03:05:42,430:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:37:57,594:INFO:Initializing load_model()
+2025-04-16 04:37:57,596:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:38:01,542:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:38:01,647:INFO:Initializing predict_model()
+2025-04-16 04:38:01,648:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff902950940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff904fc1940>)
+2025-04-16 04:38:01,648:INFO:Checking exceptions
+2025-04-16 04:38:01,648:INFO:Preloading libraries
+2025-04-16 04:38:01,649:INFO:Set up data.
+2025-04-16 04:38:01,657:INFO:Set up index.
+2025-04-16 04:38:02,367:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:39:57,510:INFO:Initializing load_model()
+2025-04-16 04:39:57,510:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:39:59,425:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:39:59,460:INFO:Initializing predict_model()
+2025-04-16 04:39:59,460:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff9206f0940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff904fc1af0>)
+2025-04-16 04:39:59,461:INFO:Checking exceptions
+2025-04-16 04:39:59,461:INFO:Preloading libraries
+2025-04-16 04:39:59,461:INFO:Set up data.
+2025-04-16 04:39:59,464:INFO:Set up index.
+2025-04-16 04:39:59,707:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:45:35,872:INFO:Initializing load_model()
+2025-04-16 04:45:35,873:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:45:37,726:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:45:37,758:INFO:Initializing predict_model()
+2025-04-16 04:45:37,759:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec5d8b0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff904fc1f70>)
+2025-04-16 04:45:37,759:INFO:Checking exceptions
+2025-04-16 04:45:37,759:INFO:Preloading libraries
+2025-04-16 04:45:37,760:INFO:Set up data.
+2025-04-16 04:45:37,762:INFO:Set up index.
+2025-04-16 04:45:37,978:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:45:56,890:INFO:Initializing load_model()
+2025-04-16 04:45:56,890:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:45:58,771:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:45:58,800:INFO:Initializing predict_model()
+2025-04-16 04:45:58,800:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ebd9250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f3280>)
+2025-04-16 04:45:58,800:INFO:Checking exceptions
+2025-04-16 04:45:58,801:INFO:Preloading libraries
+2025-04-16 04:45:58,801:INFO:Set up data.
+2025-04-16 04:45:58,803:INFO:Set up index.
+2025-04-16 04:45:58,979:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:48:41,911:INFO:Initializing load_model()
+2025-04-16 04:48:41,911:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:48:43,841:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:48:43,874:INFO:Initializing predict_model()
+2025-04-16 04:48:43,875:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec6a850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f38b0>)
+2025-04-16 04:48:43,875:INFO:Checking exceptions
+2025-04-16 04:48:43,875:INFO:Preloading libraries
+2025-04-16 04:48:43,876:INFO:Set up data.
+2025-04-16 04:48:43,879:INFO:Set up index.
+2025-04-16 04:48:44,086:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:49:58,512:INFO:Initializing load_model()
+2025-04-16 04:49:58,513:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:50:00,382:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:50:00,410:INFO:Initializing predict_model()
+2025-04-16 04:50:00,410:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff92095f970>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f33a0>)
+2025-04-16 04:50:00,411:INFO:Checking exceptions
+2025-04-16 04:50:00,411:INFO:Preloading libraries
+2025-04-16 04:50:00,411:INFO:Set up data.
+2025-04-16 04:50:00,414:INFO:Set up index.
+2025-04-16 04:50:00,593:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 04:55:26,873:INFO:Initializing load_model()
+2025-04-16 04:55:26,874:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 04:55:28,814:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 04:55:28,842:INFO:Initializing predict_model()
+2025-04-16 04:55:28,842:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec6a940>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f3820>)
+2025-04-16 04:55:28,843:INFO:Checking exceptions
+2025-04-16 04:55:28,843:INFO:Preloading libraries
+2025-04-16 04:55:28,843:INFO:Set up data.
+2025-04-16 04:55:28,846:INFO:Set up index.
+2025-04-16 04:55:29,034:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 05:03:22,718:INFO:Initializing load_model()
+2025-04-16 05:03:22,719:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 05:03:24,606:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 05:03:24,636:INFO:Initializing predict_model()
+2025-04-16 05:03:24,636:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90caa8d60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f3820>)
+2025-04-16 05:03:24,637:INFO:Checking exceptions
+2025-04-16 05:03:24,637:INFO:Preloading libraries
+2025-04-16 05:03:24,637:INFO:Set up data.
+2025-04-16 05:03:24,640:INFO:Set up index.
+2025-04-16 05:03:24,841:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 05:11:59,418:INFO:Initializing load_model()
+2025-04-16 05:11:59,421:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 05:12:01,286:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 05:12:01,314:INFO:Initializing predict_model()
+2025-04-16 05:12:01,315:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ebcd910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209f34c0>)
+2025-04-16 05:12:01,315:INFO:Checking exceptions
+2025-04-16 05:12:01,315:INFO:Preloading libraries
+2025-04-16 05:12:01,315:INFO:Set up data.
+2025-04-16 05:12:01,318:INFO:Set up index.
+2025-04-16 05:12:01,526:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 05:19:01,696:INFO:Initializing load_model()
+2025-04-16 05:19:01,696:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 05:19:03,468:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 05:19:03,496:INFO:Initializing predict_model()
+2025-04-16 05:19:03,496:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec76340>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209c1160>)
+2025-04-16 05:19:03,496:INFO:Checking exceptions
+2025-04-16 05:19:03,497:INFO:Preloading libraries
+2025-04-16 05:19:03,497:INFO:Set up data.
+2025-04-16 05:19:03,499:INFO:Set up index.
+2025-04-16 05:19:03,674:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 05:30:28,332:INFO:Initializing load_model()
+2025-04-16 05:30:28,332:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 05:30:30,265:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 05:30:30,293:INFO:Initializing predict_model()
+2025-04-16 05:30:30,294:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90caa87f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff9209c13a0>)
+2025-04-16 05:30:30,294:INFO:Checking exceptions
+2025-04-16 05:30:30,294:INFO:Preloading libraries
+2025-04-16 05:30:30,295:INFO:Set up data.
+2025-04-16 05:30:30,297:INFO:Set up index.
+2025-04-16 05:30:30,475:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:28:59,375:INFO:Initializing load_model()
+2025-04-16 06:28:59,376:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:05,544:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:05,702:INFO:Initializing predict_model()
+2025-04-16 06:29:05,702:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90caa8e50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c380f70>)
+2025-04-16 06:29:05,703:INFO:Checking exceptions
+2025-04-16 06:29:05,703:INFO:Preloading libraries
+2025-04-16 06:29:05,704:INFO:Set up data.
+2025-04-16 06:29:05,714:INFO:Set up index.
+2025-04-16 06:29:06,798:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:29:06,800:INFO:Initializing load_model()
+2025-04-16 06:29:06,800:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:08,564:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:08,589:INFO:Initializing predict_model()
+2025-04-16 06:29:08,589:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec0f3d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c345b80>)
+2025-04-16 06:29:08,590:INFO:Checking exceptions
+2025-04-16 06:29:08,590:INFO:Preloading libraries
+2025-04-16 06:29:08,590:INFO:Set up data.
+2025-04-16 06:29:08,592:INFO:Set up index.
+2025-04-16 06:29:08,779:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:29:08,784:INFO:Initializing load_model()
+2025-04-16 06:29:08,785:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:10,510:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:10,536:INFO:Initializing predict_model()
+2025-04-16 06:29:10,536:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90caa8760>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c3455e0>)
+2025-04-16 06:29:10,536:INFO:Checking exceptions
+2025-04-16 06:29:10,536:INFO:Preloading libraries
+2025-04-16 06:29:10,537:INFO:Set up data.
+2025-04-16 06:29:10,539:INFO:Set up index.
+2025-04-16 06:29:10,708:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:29:10,709:INFO:Initializing load_model()
+2025-04-16 06:29:10,710:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:12,470:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:12,497:INFO:Initializing predict_model()
+2025-04-16 06:29:12,497:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90ec99430>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c345f70>)
+2025-04-16 06:29:12,497:INFO:Checking exceptions
+2025-04-16 06:29:12,498:INFO:Preloading libraries
+2025-04-16 06:29:12,498:INFO:Set up data.
+2025-04-16 06:29:12,500:INFO:Set up index.
+2025-04-16 06:29:12,667:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:29:12,669:INFO:Initializing load_model()
+2025-04-16 06:29:12,670:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:14,386:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:14,413:INFO:Initializing predict_model()
+2025-04-16 06:29:14,413:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff9023f54f0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c380f70>)
+2025-04-16 06:29:14,413:INFO:Checking exceptions
+2025-04-16 06:29:14,413:INFO:Preloading libraries
+2025-04-16 06:29:14,414:INFO:Set up data.
+2025-04-16 06:29:14,416:INFO:Set up index.
+2025-04-16 06:29:14,612:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
+2025-04-16 06:29:55,744:INFO:Initializing load_model()
+2025-04-16 06:29:55,745:INFO:load_model(model_name=/app/data/modelo_final, platform=None, authentication=None, verbose=True)
+2025-04-16 06:29:58,148:WARNING:/usr/local/lib/python3.9/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0.1', 'setuptools': '58.1.0', 'pycaret': '3.3.2', 'IPython': '8.18.1', 'ipywidgets': '8.1.6', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.22', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.2.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.11.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-16 06:29:58,181:INFO:Initializing predict_model()
+2025-04-16 06:29:58,181:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff90cad9cd0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Monthly_Inhand_Salary',
+                                             'Outstanding_Debt',
+                                             'Num_Credit_Card', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    trans...most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['Payment_of_Min_Amount'],
+                                    transformer=OrdinalEncoder(cols=['Payment_of_Min_Amount'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'Payment_of_Min_Amount',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ff90c380dc0>)
+2025-04-16 06:29:58,181:INFO:Checking exceptions
+2025-04-16 06:29:58,182:INFO:Preloading libraries
+2025-04-16 06:29:58,182:INFO:Set up data.
+2025-04-16 06:29:58,185:INFO:Set up index.
+2025-04-16 06:29:58,399:WARNING:/app/services/ml_model_service.py:29: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  result = result.applymap(lambda x: int(x) if isinstance(x, (np.integer, np.int8, np.int64))
+
