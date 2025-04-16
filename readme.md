@@ -34,10 +34,10 @@ cd sbc-api
 ---
 # 🚀 Inicialización del Proyecto sbc-api usando Docker
 ## 📂 Requisitos
-1. Antes de correr la aplicación es necesario agregar el archivo **"modelo_final.pkl.pkl"** en la carpeta **backend/data/modelo_final.pkl** del proyecto sbc-api
+1. Antes de correr la aplicación es necesario agregar el archivo **"modelo_final.pkl"** en la carpeta **backend/data/modelo_final.pkl** del proyecto sbc-api
 Para usar el modelo hay dos opciones. 
 - **Opción 1:** Crear el ".pkl". Se debe correr este proyecto desde colab https://colab.research.google.com/drive/1qdICHMB16XyHOjfR2Aw3-Eduz3G0tLnS?usp=sharing (Se dieron permisos a la cuenta del profesor asociada al Cenfotec). Una vez en Colab puede correr celda por celda el cuaderno o bien, en el menú principal seleccionar "Entorno de ejecución" -> "Ejecutar todo".
-Una vez ejecutado el cuaderno, se debe descargar el archivo modelo_final.pkl.pkl (El archivo se puede visualizar en Colab en el menú lateral último icono de carpeta).
+Una vez ejecutado el cuaderno, se debe descargar el archivo modelo_final.pkl (El archivo se puede visualizar en Colab en el menú lateral último icono de carpeta).
 Importante: El proceso de ejecución del modelo puede tardar 15 minutos aproximadamente.
 - **Opción 2:** Usar el pkl que se adjunto en el .zip descargado.(Esto depende de si la plataforma Moodle nos deje cargar el archivo ya que es un archivo pesado).
 
