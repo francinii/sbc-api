@@ -1,3 +1,5 @@
+// consulta-score-crediticio-batch.ts
+
 "use client"
 
 import React, { useState } from "react";
@@ -53,6 +55,17 @@ export type Applicant = {
     cuota_mensual_total: number;
     score_credito: number;
     deuda_total: number;
+    fecha_nacimiento?: string;
+    tipoDocumento?: string;
+    delay_from_due_date?: number;
+    balance_mensual?: number;
+    monthly_inhand_salary?: number;
+    outstanding_debt?: number;
+    num_credit_cards?: number;
+    payment_of_min_amount?: string;
+    monto_inversion_mensual?: number;
+    experiencia_crediticia?: number;
+    cantidad_prestamos_activos?: number;
 }
 
 export const columns: ColumnDef<Applicant>[] = [
@@ -292,20 +305,29 @@ export default function ConsultaScoreCrediticioBatch() {
             setData(processedData);
 
             const payload = jsonData.map((item: any) => ({
-                cedula: item.cedula,
-                nombre: item.nombre,
-                apellido: item.apellido,
-                edad: item.edad,
-                ocupacion: item.ocupacion,
-                meses_trabajando: item.meses_trabajando,
-                salario_mensual: item.salario_mensual,
-                deuda_total: item.deuda_total || 0,
-                cuota_mensual_total: item.cuota_mensual_total,
-                score_credito: 0,
-                delay_from_due_date: item.delay_from_due_date,
-                balance_mensual: item.balance_mensual
+              cedula: item.cedula,
+              nombre: item.nombre,
+              apellido: item.apellido,
+              edad: item.edad,
+              ocupacion: item.ocupacion,
+              meses_trabajando: item.meses_trabajando,
+              salario_mensual: item.salario_mensual,
+              deuda_total: item.deuda_total || 0,
+              cuota_mensual_total: item.cuota_mensual_total || 0,
+              score_credito: 0,
+              delay_from_due_date: item.delay_from_due_date || 0,
+              balance_mensual: item.balance_mensual || 0,
+              monthly_inhand_salary: item.monthly_inhand_salary || item.salario_mensual || 0,
+              outstanding_debt: item.outstanding_debt || item.deuda_total || 0,
+              num_credit_cards: item.num_credit_cards || 0,
+              payment_of_min_amount: item.payment_of_min_amount || "No",
+              monto_inversion_mensual: item.monto_inversion_mensual || 0,
+              experiencia_crediticia: item.experiencia_crediticia || 0,
+              cantidad_prestamos_activos: item.cantidad_prestamos_activos || 0,
+              tipoDocumento: item.tipoDocumento || "cedula",
+              fecha_nacimiento: item.fecha_nacimiento || "01-01-1990"
             }));
-
+            
             processApplicants(payload);
         };
         reader.readAsArrayBuffer(file);

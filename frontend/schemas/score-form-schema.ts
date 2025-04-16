@@ -1,6 +1,5 @@
 import { z } from "zod";
 
-// Lista de ocupaciones como ENUM
 export const ocupacionesEnum = [
   "Accountant",
   "Architect",
@@ -19,21 +18,16 @@ export const ocupacionesEnum = [
   "Writer",
 ] as const;
 
-// Campo numérico (mayor o igual a 0)
 const nonNegativeField = z.preprocess(
   (val) => (typeof val === "string" ? Number(val) : val),
-  z.number()
-    .min(0, { message: "Debe ser un número mayor o igual a 0." })
+  z.number().min(0, { message: "Debe ser un número mayor o igual a 0." })
 );
 
-// Campo numérico (mayor a 0, excepto `meses_trabajando`)
 const positiveField = z.preprocess(
   (val) => (typeof val === "string" ? Number(val) : val),
-  z.number()
-    .positive({ message: "Debe ser un número mayor a 0." })
+  z.number().positive({ message: "Debe ser un número mayor a 0." })
 );
 
-// Fecha de nacimiento: Debe ser al menos 10 años atrás
 const minBirthDate = new Date();
 minBirthDate.setFullYear(minBirthDate.getFullYear() - 10);
 
@@ -43,12 +37,22 @@ export const ScoreFormSchema = z.object({
   nombre: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
   apellido: z.string().min(2, { message: "El apellido debe tener al menos 2 caracteres." }),
   ocupacion: z.enum(ocupacionesEnum, { message: "Debe seleccionar una ocupación válida." }),
+
   meses_trabajando: nonNegativeField,
   salario_mensual: positiveField,
   deuda_total: nonNegativeField,
   cuota_mensual_total: nonNegativeField,
   delay_from_due_date: nonNegativeField,
   balance_mensual: nonNegativeField,
+
+  monthly_inhand_salary: positiveField,
+  outstanding_debt: nonNegativeField,
+  num_credit_cards: nonNegativeField,
+  payment_of_min_amount: z.enum(["Yes", "No"], { message: "Debe indicar si paga el monto mínimo." }),
+  monto_inversion_mensual: nonNegativeField,
+  experiencia_crediticia: nonNegativeField,
+  cantidad_prestamos_activos: nonNegativeField,
+
   fecha_nacimiento: z.date().refine(
     (date) => date <= minBirthDate,
     { message: "Debe tener al menos 10 años de edad." }
