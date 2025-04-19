@@ -12,11 +12,13 @@ class EnergyTest():
         self.db = db
         pass
 
-    async def GenerateWattMeassure(self, applicants: list[Applicant]):
+    def GenerateWattMeassure(self, applicants: list[Applicant]):
+        csv_handler = CSVHandler('energy_meassures.csv')
         for applicant in applicants:
-            await ServiceEnergyTest(self.db).call_model_and_motor(applicant)
+            ServiceEnergyTest(self.db).call_model_and_motor(applicant)
+            print("-----------pasa por aquí..")
         csv_handler.save_data()
-        print("que pasa aqui??")
+        print("----------------- que pasa aqui??")
         return "check file energy_meassures.csv"
 
 class ServiceEnergyTest():
@@ -37,6 +39,7 @@ class ServiceEnergyTest():
         #{'prediction_label': 'Standard', 'prediction_score': 0.8796}
         # print(applicant.score_credito) # 0.8796
         applicant.score_credito = modelResult["prediction_score"]
+        print("???????? Pero aqui si pasa???")
         
         return Service(self.db).call_motor_inference(applicant)
     
