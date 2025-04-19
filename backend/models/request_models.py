@@ -46,6 +46,16 @@ class Applicant(BaseModel):
             cantidad_prestamos_activos=self.cantidad_prestamos_activos
         )
     
+
+    def convert_applicant_to_mlmodel(self)-> 'MLModelBest':
+        return MLModelBest(
+            Payment_of_Min_Amount=self.payment_of_min_amount,
+            Monthly_Inhand_Salary=self.monthly_inhand_salary,
+            Outstanding_Debt=self.outstanding_debt,
+            Num_Credit_Card=self.num_credit_cards,
+            Age=self.edad
+        )
+    
 class MLModelBestOld(BaseModel):
     Age: int # check
     Monthly_Inhand_Salary: float # check Payment_of_Min_Amount
@@ -58,6 +68,8 @@ class MLModelBest(BaseModel):
     Outstanding_Debt: float
     Num_Credit_Card: int
     Age: int
+
+    
 
 class Graphic(BaseModel):
     id: int
