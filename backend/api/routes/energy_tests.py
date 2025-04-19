@@ -17,7 +17,7 @@ async def get_model_and_motor_energy_test(db: Session = Depends(get_db)):
     applicants_data = json.load(file)
   applicants_list = [Applicant(**applicant) for applicant in applicants_data]
 
-  return await EnergyTest(db).GenerateWattMeassure(applicants_list)
+  return EnergyTest(db).GenerateWattMeassure(applicants_list)
 
 
 
