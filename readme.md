@@ -59,8 +59,7 @@ Una vez iniciado el entorno con Docker, puedes acceder a los aplicativos en las 
 
 ### 🔹 Frontend
 📍 [http://localhost:3000/](http://localhost:3000/)
-**Nota importante**: En el archivo "Avance Proyecto I" se adjuntan algunos ejemplos de como se pueden realizar pruebas desde el Frontend.
-Es posible que la llamada del modelo desde el formulario de la interfaz dure un poco. (Si la solicitud está en proceso, se verá el botón como "Procesando").
+**Nota importante**: Si la solicitud está en proceso, se verá el botón como "Procesando".
 **Nota importante 2**: para correr en batch se adjunta en el .zip un archivo "applicants_sample.xlsx" que puede correrse como ejemplo.
 
 

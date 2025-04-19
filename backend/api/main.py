@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes.model import router as model 
 from api.routes.graphics import router as graphics
 from api.routes.rules import router as rules
+from api.routes.energy_tests import router as energy_tests
 
 from scripts.seeder_runner import run_rule_seeder
 
@@ -21,6 +22,7 @@ app.add_middleware(
 app.include_router(model, prefix="/models", tags=["models"])
 app.include_router(graphics, prefix="/graphics", tags=["graphics"])
 app.include_router(rules, prefix="/rules", tags=["rules"])
+app.include_router(energy_tests, prefix="/energy_tests", tags=["energy_tests"])
 
 @app.on_event("startup")
 def on_startup():

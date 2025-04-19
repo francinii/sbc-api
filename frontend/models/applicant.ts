@@ -18,7 +18,7 @@ export interface Applicant {
 	num_credit_cards: number;
 	payment_of_min_amount: string; // "Yes" o "No"
 	monto_inversion_mensual: number;
-	experiencia_crediticia: number;
+	experiencia_crediticia: number; // (En meses)
 	cantidad_prestamos_activos: number;
   }
   

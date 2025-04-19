@@ -3,7 +3,6 @@ from requests import Session
 from services.rule_service import RuleService
 from models.response_models import ApplicantResponse
 from models.request_models import Applicant
-from models.V2.request_models_v2 import ApplicantV2
 
 from experta import *
 import collections
@@ -14,15 +13,7 @@ from models.applicant_models import Cliente
 if not hasattr(collections, 'Mapping'):
     collections.Mapping = collections.abc.Mapping
 
-'''class Cliente(Fact):
-    """Datos del solicitante"""
-    credit_history = Field(int, mandatory=True)
-    income = Field(float, mandatory=True)
-    debt_to_income = Field(float, mandatory=True)
-    job_stability = Field(int, mandatory=True)
-    approval_probability = Field(float, default=0.0)
-    score = Field(int, default=0)
-'''
+
 class InferenceMotorServices(KnowledgeEngine):
     def __init__(self, db:Session):
         super().__init__()
@@ -92,17 +83,3 @@ class InferenceMotorServices(KnowledgeEngine):
         self.declare(applicant_fact)
         self.apply_rules(applicant_fact)
         return self.answer_obj
-
-    '''
-    def inference_callV2(self, applicant: ApplicantV2) -> list:
-        applicant_fact = applicant.convert_to_fact()
-        print(applicant_fact)
-        self.reset()
-        self.declare(applicant_fact)
-        self.apply_rules(applicant_fact)
-        return self.answer_obj
-    '''
-
-
-
-

@@ -121,13 +121,13 @@ INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'num_c
 INSERT INTO rules (message, score_change, effect)
 VALUES ('Solo paga el mínimo. Mayor riesgo de impago.', 0, 'warning')
 RETURNING id INTO rule_id;
-INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'payment_of_min_amount', '$eq', 'true');
+INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'payment_of_min_amount', '$eq', 'Yes');
 
 -- Regla 19
 INSERT INTO rules (message, score_change, effect)
 VALUES ('No paga el mínimo. Tiende a un buen comportamiento de pago.', 0, 'success')
 RETURNING id INTO rule_id;
-INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'payment_of_min_amount', '$eq', 'false');
+INSERT INTO conditions (rule_id, field, operator, value) VALUES (rule_id, 'payment_of_min_amount', '$eq', 'No');
 
 -- Regla 20
 INSERT INTO rules (message, score_change, effect)
