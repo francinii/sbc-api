@@ -8,24 +8,11 @@ import os
 from requests import Session
 
 from models.request_models import Applicant, MLModelBest
-from tests.energy_test import EnergyTest
-
 
 router = APIRouter()
 
-@router.get("/test-api-energy-used")
-async def get_model_and_motor_energy_test(db: Session = Depends(get_db)):
-  file_path = os.path.join(os.path.dirname(__file__), "../../tests/30_applicants.json")
-  with open(file_path,"r", encoding="utf-8") as file:
-    applicants_data = json.load(file)
-  applicants_list = [Applicant(**applicant) for applicant in applicants_data]
-
-  return EnergyTest(db).GenerateWattMeassure(applicants_list)
-
-
-
-@router.get("/measure")
-def measure_cpu_usage(db: Session = Depends(get_db)):
+@router.get("/measure/{TDP_WATTS}", description="Recibe el TDP real de tu CPU. Ej: 55")
+def measure_cpu_usage(TDP_WATTS: int, db: Session = Depends(get_db)):
     process = psutil.Process()
     cpu_before = process.cpu_times()
     mem_before = process.memory_info().rss
@@ -72,7 +59,7 @@ def measure_cpu_usage(db: Session = Depends(get_db)):
     # Adolfo  ----- 
     # Jose  ----- 
     # Andres  ----- 
-    TDP_WATTS = 55  # <-- Cambia esto por el TDP real de tu CPU
+    # TDP_WATTS = 55 # <-- Cambia esto por el TDP real de tu CPU
     cpu_usage_ratio = total_cpu_time / duration_sec  # Ej: 0.75 → 75% de uso en el tiempo medido
     estimated_energy_joules = TDP_WATTS * cpu_usage_ratio * duration_sec  # Joules = W * s
     estimated_energy_per_inference = estimated_energy_joules / number_of_applicants

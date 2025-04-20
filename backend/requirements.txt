@@ -7,4 +7,3 @@ psycopg2-binary
 frozendict
 experta
 pycaret
-pyJoules

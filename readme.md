@@ -60,7 +60,7 @@ Una vez iniciado el entorno con Docker, puedes acceder a los aplicativos en las 
 ### 🔹 Frontend
 📍 [http://localhost:3000/](http://localhost:3000/)
 **Nota importante**: Si la solicitud está en proceso, se verá el botón como "Procesando".
-**Nota importante 2**: para correr en batch se adjunta en el .zip un archivo "applicants_sample.xlsx" que puede correrse como ejemplo.
+**Nota importante 2**: La funcionalidad batch puede utilziar esta plantilla de ejemplo "batch_template.xlsx", que está en la carpeta frontend.
 
 
 ### 🔹 Backend
