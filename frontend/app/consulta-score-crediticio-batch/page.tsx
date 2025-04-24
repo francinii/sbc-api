@@ -240,7 +240,31 @@ export default function ConsultaScoreCrediticioBatch() {
 
     const handleViewRules = async (applicant: any) => {
         try {
-            const response = await getSbcModel(applicant.original);
+          console.log(applicant);
+
+            const response = await getSbcModel({
+                tipoDocumento: "cedula",
+                cedula: applicant.original.cedula,
+                nombre: applicant.original.nombre,
+                apellido: applicant.original.apellido,
+                ocupacion: applicant.original.ocupacion,
+                meses_trabajando: applicant.original.meses_trabajando,
+                salario_mensual: applicant.original.salario_mensual,
+                deuda_total: applicant.original.deuda_total,
+                cuota_mensual_total: applicant.original.cuota_mensual_total,
+                delay_from_due_date: applicant.original.delay_from_due_date,
+                balance_mensual: applicant.original.balance_mensual,
+                monthly_inhand_salary: applicant.original.monthly_inhand_salary,
+                outstanding_debt: applicant.original.outstanding_debt,
+                num_credit_cards: applicant.original.num_credit_cards,
+                payment_of_min_amount: applicant.original.payment_of_min_amount,
+                monto_inversion_mensual: applicant.original.monto_inversion_mensual,
+                experiencia_crediticia: applicant.original.experiencia_crediticia,
+                cantidad_prestamos_activos: applicant.original.cantidad_prestamos_activos,
+                fecha_nacimiento: applicant.original.fecha_nacimiento,
+                edad: applicant.original.edad,
+                score_credito: applicant.original.score,
+            });
     
             if (Array.isArray(response) && response.length > 0) {
                 // Si la respuesta es un array válido con reglas, se almacena directamente
@@ -300,6 +324,17 @@ export default function ConsultaScoreCrediticioBatch() {
                 score_credito: 0,
                 score: "Pendiente de análisis",
                 result: "Pendiente de análisis",
+                delay_from_due_date: item.delay_from_due_date || 0,
+                balance_mensual: item.balance_mensual || 0,
+                monthly_inhand_salary: item.monthly_inhand_salary || item.salario_mensual || 0,
+                outstanding_debt: item.outstanding_debt || item.deuda_total || 0,
+                num_credit_cards: item.num_credit_cards || 0,
+                payment_of_min_amount: item.payment_of_min_amount || "No",
+                monto_inversion_mensual: item.monto_inversion_mensual || 0,
+                experiencia_crediticia: item.experiencia_crediticia || 0,
+                cantidad_prestamos_activos: item.cantidad_prestamos_activos || 0,
+                tipoDocumento: item.tipoDocumento || "cedula",
+                fecha_nacimiento: item.fecha_nacimiento || "01-01-1990"
             }));
 
             setData(processedData);
@@ -314,7 +349,7 @@ export default function ConsultaScoreCrediticioBatch() {
               salario_mensual: item.salario_mensual,
               deuda_total: item.deuda_total || 0,
               cuota_mensual_total: item.cuota_mensual_total || 0,
-              score_credito: 0,
+              score_credito: item.score,
               delay_from_due_date: item.delay_from_due_date || 0,
               balance_mensual: item.balance_mensual || 0,
               monthly_inhand_salary: item.monthly_inhand_salary || item.salario_mensual || 0,
@@ -518,14 +553,13 @@ export default function ConsultaScoreCrediticioBatch() {
                 <AlertDialogHeader>
                     <AlertDialogTitle>Reglas de Evaluación</AlertDialogTitle>
                 </AlertDialogHeader>
-                <AlertDialogDescription>
+                <AlertDialogDescription asChild>
                   <div className="space-y-2">
                     {rulesData.length > 0 ? (
                       <ul className="list-disc ml-5 space-y-2">
                         {rulesData.map((rule, index) => (
                           <li key={index}>
-                            <strong>{rule.regla}:</strong> {rule.descripcion} (
-                            <span className="text-red-500">{rule.puntos} puntos</span>)
+                            <strong>{rule.regla}:</strong> {rule.descripcion}
                           </li>
                         ))}
                       </ul>
